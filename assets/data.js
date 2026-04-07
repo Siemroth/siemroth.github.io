@@ -286,7 +286,7 @@ window.SITE_DATA = {
       title: "The Optimal Reset-Hour of a Once-Daily Petrol Price Increase Limit",
       year: "2026",
       context: "arXiv paper",
-      summary: "Germany announced that petrol stations would only be allowed to increase prices once per day in the future, whereas price decreases would remain unlimited. I ask when this single daily allowed price increase should be allowed. Using detailed German intraday petrol price data, I infer the share of price-sensitive consumers at every hour of the day from the data, given a simple spatial competition model. Using the distribution of inferred shares of price-sensitive consumers over the day, I calculate the resulting equilibrium price path over the day for every possible \"reset-hour\" of the new policy. I find that a 11:00 reset minimizes the quantity-weighted daily price level.",
+      summary: "Germany announced that petrol stations would only be allowed to increase prices once per day in the future, whereas price decreases would remain unlimited. I ask when this single daily price increase should be allowed. Using detailed German intraday petrol price data, I infer the share of price-sensitive consumers at every hour of the day from the data, given a simple spatial competition model. Using the distribution of inferred shares of price-sensitive consumers over the day, I calculate the resulting equilibrium price path over the day for every possible \"reset-hour\" of the new policy. I find that a 11:00 reset minimizes the quantity-weighted daily price level.",
       summaryExtra: "",
       links: [
         { label: "arXiv", url: "http://arxiv.org/abs/2603.18920" },
@@ -296,7 +296,7 @@ window.SITE_DATA = {
       title: "Written evidence to the UK parliamentary committee on home-based working",
       year: "2025",
       context: "with Michael Gibbs and Friederike Mengel",
-      summary: "We summarize our research findings on work from home, based on our three academic studies on the topic",
+      summary: "Response to a parliamentary committee on remote work, based on our three academic studies on this topic.",
       summaryExtra: "",
       links: [
         { label: "Written evidence", url: "https://committees.parliament.uk/writtenevidence/138962/pdf/" },
