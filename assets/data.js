@@ -1,7 +1,7 @@
 window.SITE_DATA = {
   selectedPublications: [
     {
-      title: "Investigating the Analytical Robustness of Quantitative Social Science Research",
+      title: "Investigating the Analytical Robustness of the Social and Behavioural Sciences",
       coauthors: "with Aczel et al. (crowd project)",
       pubStatus: "Published",
       year: "2026",
@@ -19,9 +19,9 @@ window.SITE_DATA = {
       title: "Ending Wasteful Year-End Spending: On Optimal Budget Rules in Organizations",
       coauthors: "",
       pubStatus: "Published",
-      year: "2025",
+      year: "2024",
       journal: "International Economic Review",
-      journalDetail: "66(1), 111-145",
+      journalDetail: "65(3), 1163-1188",
       topics: ["Organizational Economics", "Public Economics"],
       methods: ["Theory"],
       links: [
@@ -37,7 +37,7 @@ window.SITE_DATA = {
       pubStatus: "Published",
       year: "2023",
       journal: "Journal of Economic Behavior & Organization",
-      journalDetail: "210, 275-292",
+      journalDetail: "209, 74-90",
       topics: ["Sustainable Finance", "Behavioral Economics", "Financial Economics", "Environmental Economics"],
       methods: ["Experiment"],
       links: [
@@ -53,7 +53,7 @@ window.SITE_DATA = {
       pubStatus: "Published",
       year: "2023",
       journal: "Journal of Political Economy Microeconomics",
-      journalDetail: "1(1), 99-136",
+      journalDetail: "1(1), 7-41",
       topics: ["Organizational Economics", "Remote Work", "Personnel Economics"],
       methods: ["Field Data Analysis"],
       links: [
@@ -68,7 +68,7 @@ window.SITE_DATA = {
       pubStatus: "Published",
       year: "2021",
       journal: "Review of Financial Studies",
-      journalDetail: "34(8), 3852-3888",
+      journalDetail: "34(9), 4412-4449",
       topics: ["Financial Economics", "Asset Pricing", "Behavioral Economics"],
       methods: ["Experiment"],
       links: [
@@ -83,7 +83,7 @@ window.SITE_DATA = {
       pubStatus: "Published",
       year: "2019",
       journal: "Journal of the European Economic Association",
-      journalDetail: "17(5), 1394-1442",
+      journalDetail: "17(5), 1393-1427",
       topics: ["Financial Economics", "Innovation"],
       methods: ["Theory"],
       links: [
@@ -98,7 +98,7 @@ window.SITE_DATA = {
       pubStatus: "Published",
       year: "2019",
       journal: "Journal of Economic Theory",
-      journalDetail: "179, 168-202",
+      journalDetail: "179, 240-274",
       topics: ["Financial Economics", "Asset Pricing"],
       methods: ["Theory"],
       links: [
@@ -113,7 +113,7 @@ window.SITE_DATA = {
       pubStatus: "Published",
       year: "2017",
       journal: "Review of Economics and Statistics",
-      journalDetail: "99(1), 67-79",
+      journalDetail: "99(4), 577-590",
       topics: ["Organizational Economics", "Innovation", "Personnel Economics"],
       methods: ["Field Experiment", "Field Data Analysis", "Experiment"],
       links: [
@@ -126,9 +126,9 @@ window.SITE_DATA = {
       title: "An Experimental Analysis of Information Acquisition in Prediction Markets",
       coauthors: "with Lionel Page",
       pubStatus: "Published",
-      year: "2016",
+      year: "2017",
       journal: "Games and Economic Behavior",
-      journalDetail: "96, 212-228",
+      journalDetail: "101, 354-378",
       topics: ["Financial Economics", "Behavioral Economics", "Asset Pricing"],
       methods: ["Experiment"],
       links: [
