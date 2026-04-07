@@ -9,24 +9,69 @@ function escapeHtml(value) {
     .replaceAll("'", "&#39;");
 }
 
+function createSlug(value) {
+  return String(value)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function renderLinkPill(link, options = {}) {
+  const pillClass = options.compact ? " link-pill-compact" : "";
+  const icon = options.compact ? '<span class="link-symbol" aria-hidden="true">&#8599;</span>' : "";
+
+  return `
+    <a class="link-pill${pillClass}" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">
+      ${icon}
+      ${escapeHtml(link.label)}
+    </a>
+  `;
+}
+
 function renderLinkPills(links, options = {}) {
   if (!links || !links.length) {
     return "";
   }
 
   const compactClass = options.compact ? " link-row-compact" : "";
-  const pillClass = options.compact ? " link-pill-compact" : "";
-  const icon = options.compact ? '<span class="link-symbol" aria-hidden="true">&#8599;</span>' : "";
 
   return `
     <div class="link-row${compactClass}">
-      ${links.map((link) => `
-        <a class="link-pill${pillClass}" href="${escapeHtml(link.url)}" target="_blank" rel="noreferrer">
-          ${icon}
-          ${escapeHtml(link.label)}
-        </a>
-      `).join("")}
+      ${links.map((link) => renderLinkPill(link, options)).join("")}
     </div>
+  `;
+}
+
+function renderResearchActions(paper) {
+  const abstractId = `paper-abstract-${createSlug(`${paper.title}-${paper.year}`)}`;
+  const abstractToggle = paper.abstract
+    ? `
+      <button
+        type="button"
+        class="link-pill link-pill-compact abstract-toggle"
+        data-abstract-target="${escapeHtml(abstractId)}"
+        aria-expanded="false"
+        aria-controls="${escapeHtml(abstractId)}"
+      >
+        <span class="link-symbol" aria-hidden="true">&#8595;</span>
+        Abstract
+      </button>
+    `
+    : "";
+  const abstractPanel = paper.abstract
+    ? `
+      <div class="paper-abstract" id="${escapeHtml(abstractId)}" data-abstract-id="${escapeHtml(abstractId)}" hidden>
+        ${escapeHtml(paper.abstract)}
+      </div>
+    `
+    : "";
+
+  return `
+    <div class="link-row link-row-compact">
+      ${(paper.links || []).map((link) => renderLinkPill(link, { compact: true })).join("")}
+      ${abstractToggle}
+    </div>
+    ${abstractPanel}
   `;
 }
 
@@ -107,7 +152,7 @@ function renderResearchPaperCard(paper) {
       </div>
       ${metaLine ? `<p class="paper-meta-line">${metaLine}</p>` : ""}
       ${renderTags(combinedTags, { rowClass: "badge-row-compact", tagClass: "paper-tag-compact" })}
-      ${renderLinkPills(paper.links, { compact: true })}
+      ${renderResearchActions(paper)}
     </article>
   `;
 }
@@ -181,6 +226,7 @@ function renderHome() {
 }
 
 function renderResearch() {
+  const researchShell = document.querySelector(".research-shell");
   const resultsContainer = document.querySelector("#research-results");
   const resultCount = document.querySelector("#research-result-count");
   const topicFilters = document.querySelector("#topic-filters");
@@ -188,7 +234,7 @@ function renderResearch() {
   const statusFilters = document.querySelector("#status-filters");
   const clearButton = document.querySelector("#clear-research-filters");
 
-  if (!resultsContainer || !resultCount || !topicFilters || !methodFilters || !statusFilters || !clearButton) {
+  if (!researchShell || !resultsContainer || !resultCount || !topicFilters || !methodFilters || !statusFilters || !clearButton) {
     return;
   }
 
@@ -339,7 +385,33 @@ function renderResearch() {
     }
   }
 
-  document.querySelector(".research-shell").addEventListener("click", (event) => {
+  function setAbstractExpanded(targetId, expanded) {
+    const toggle = researchShell.querySelector(`[data-abstract-target="${targetId}"]`);
+    const panel = researchShell.querySelector(`[data-abstract-id="${targetId}"]`);
+    if (!toggle || !panel) {
+      return;
+    }
+
+    toggle.setAttribute("aria-expanded", expanded ? "true" : "false");
+    panel.hidden = !expanded;
+    panel.classList.toggle("is-open", expanded);
+  }
+
+  researchShell.addEventListener("click", (event) => {
+    const abstractToggle = event.target.closest("[data-abstract-target]");
+    if (abstractToggle) {
+      const targetId = abstractToggle.dataset.abstractTarget;
+      const isExpanded = abstractToggle.getAttribute("aria-expanded") === "true";
+      setAbstractExpanded(targetId, !isExpanded);
+      return;
+    }
+
+    const abstractPanel = event.target.closest(".paper-abstract");
+    if (abstractPanel) {
+      setAbstractExpanded(abstractPanel.dataset.abstractId, false);
+      return;
+    }
+
     const button = event.target.closest("[data-filter-group]");
     if (!button) {
       return;

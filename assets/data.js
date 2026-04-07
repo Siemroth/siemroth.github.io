@@ -13,6 +13,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1038/s41586-025-09844-9" },
         { label: "Data", url: "https://osf.io/q5h2c/" },
       ],
+      abstract: "The same dataset can be analysed in different justifiable ways to answer the same research question, potentially challenging the robustness of empirical science. In this crowd initiative, we investigated the degree to which research findings in the social and behavioural sciences are contingent on analysts’ choices. We examined a stratified random sample of 100 studies published between 2009 and 2018, in which, for one claim per study, at least five reanalysts independently reanalysed the original data. The statistical appropriateness of the reanalyses was assessed in peer evaluations, and the robustness indicators were inspected along a range of research characteristics and study designs. We found that 34% of the independent reanalyses yielded the same result (within a tolerance region of ±0.05 Cohen’s d) as the original report; with a four times broader tolerance region, this indicator increased to 57%. Of the reanalyses conducted, 74% reached the same conclusion as the original investigation, 24% yielded no effects or inconclusive results and 2% reported the opposite effect. This exploratory study indicates that the common single-path analyses in social and behavioural research should not be simply assumed to be robust to alternative analyses. Therefore, we recommend the development and use of practices to explore and communicate this neglected source of uncertainty.",
     },
     {
       title: "Ending Wasteful Year-End Spending: On Optimal Budget Rules in Organizations",
@@ -28,6 +29,7 @@ window.SITE_DATA = {
         { label: "Preprint", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3991922" },
         { label: "AI video summary", url: "https://youtu.be/Q2wNoI7OXZE" },
       ],
+      abstract: "What can organizations do to minimize wasteful year-end spending? I introduce a two-period model to derive optimal budget roll-over and audit rules. A principal tasks an agent with using a budget to fulfill the organization's spending needs, which are private information of the agent. The agent can misuse funds for private benefit. The optimal rules allow the agent to roll-over a share of the unused funds, but not necessarily the full share, and in most cases to audit only sufficiently large spending. The optimal audit rule can change once fund roll-over is allowed. Strategically underfunding the agent can be optimal.",
     },
     {
       title: "Why Do Retail Investors Pick Green Investments? A Lab-in-the-Field Experiment with Crowdfunders",
@@ -43,6 +45,7 @@ window.SITE_DATA = {
         { label: "Preprint", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3892621" },
         { label: "Data", url: "https://reshare.ukdataservice.ac.uk/856397/" },
       ],
+      abstract: "Do investors invest in green projects because they expect higher returns, to help the environment, or to help other people? To separate these motivations, we run a decision experiment in which crowdfunders choose between a higher return or a positive environmental impact, and between a higher return or a positive social impact. A majority of investors choose environmental and social impact over higher returns, conditional on large enough impact. Combining the experimental data with historical investments, we find that investors allocate a larger share of funds to green projects if they value environmental impact more and if they expect a higher return, but not if they value social impact more, all else equal. These findings suggest that investors have a preference for positive environmental impact, and satisfy it by investing in green projects. Finally, we introduce new survey measures of impact for future use, which are experimentally validated and predict field behavior.",
     },
     {
       title: "Work from Home and Productivity: Evidence from Personnel and Analytics Data on Information Technology Professionals",
@@ -57,6 +60,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1086/721803" },
         { label: "Preprint", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3841457" },
       ],
+      abstract: " We study employee productivity before and during the working-from-home period of the COVID-19 pandemic, using personnel and analytics data from over 10,000 skilled professionals at an Indian technology company. Hours worked increased, output declined slightly, and productivity fell 8%-19%. We then analyze determinants of productivity changes. An important source is higher communication costs. Time spent on coordination activities and meetings increased, while uninterrupted work hours shrank considerably. Employees networked with fewer individuals and business units inside and outside the firm and had fewer one-to-one meetings with supervisors. The findings suggest key issues for firms in implementing remote work.",
     },
     {
       title: "How Much Information is Incorporated in Financial Asset Prices? Experimental Evidence",
@@ -71,6 +75,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1093/rfs/hhaa143" },
         { label: "Preprint", url: "https://ssrn.com/abstract=3130307" },
       ],
+      abstract: "We investigate the informational content of prices in financial asset markets. To do so we use a large number of market experiments where the amount of information held by traders is precisely observed. We derive a new method to estimate how much of this information is incorporated in market prices. We find that public information is almost completely reflected in prices, but that surprisingly little private information—less than 50%—is incorporated in prices. Our estimates therefore suggest that while semi-strong informational efficiency is consistent with the data, financial market prices may be very far from strong-form efficiency. ",
     },
     {
       title: "Crowdfunding, Efficiency, and Inequality",
@@ -85,6 +90,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1093/jeea/jvy023" },
         { label: "Preprint", url: "https://ssrn.com/abstract=2886401" },
       ],
+      abstract: "We show how decentralized individual investments can efficiently allocate capital to innovating firms via equity crowdfunding. We develop a model where consumers have privately known consumption preferences and may act as investors. Consumers identify worthwhile investments based on their own preferences and invest in firms whose product they like. In the presence of aggregate demand uncertainty, an efficient capital allocation is achieved if all groups of consumers have enough liquidity to invest. If some groups of consumers cannot invest, capital flows reflect preferences of liquid investors but not future demand. Comparing with traditional financing forms, crowdfunding in the absence of liquidity constraints can be superior unless traditional financiers are fully competitive and perfectly informed.",
     },
     {
       title: "The Informational Content of Prices When Policy Makers React to Financial Markets",
@@ -99,6 +105,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1016/j.jet.2018.11.002" },
         { label: "Preprint", url: "http://ssrn.com/abstract=2462177" },
       ],
+      abstract: "When can policy makers use policy-relevant information from financial market prices and how does policy affect price informativeness? I analyze a novel setting with noise where a policy maker tries to infer information about a state variable from prices to improve policy decisions, and policy in turn affects asset values. I derive a necessary and sufficient condition for the possibility of information revelation in equilibrium, which might not be possible if the policy reaction to prices punishes traders for revealing their information. If the policy maker is uninformed, then policy objectives do not change price informativeness, but they do if the policy maker has independent information about the state. I also analyze policy maker transparency, and find that policy makers with objectives having a large impact on asset values should publish their information before trading to make prices more informative. In other cases, intransparency can be optimal.",
     },
     {
       title: "A Field Experiment in Motivating Employee Ideas",
@@ -113,6 +120,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "http://dx.doi.org/10.1162/REST_a_00631" },
         { label: "Preprint", url: "http://ssrn.com/abstract=2420965" },
       ],
+      abstract: "We study a field experiment at a large technology company. Employees were encouraged to submit ideas on process and product improvements. The company randomly assigned nineteen teams into treatment and control groups. Treatment team employees received rewards if their ideas were approved. Nothing changed for control team employees. Our main finding is that rewards substantially increased the quality of ideas. Rewards increased participation in the suggestion system but decreased ideas per participating employee, with no net effect on the quantity of ideas. Broader participation persisted after the reward was discontinued, suggesting habituation. We find no evidence for motivational crowding out.",
     },
     {
       title: "An Experimental Analysis of Information Acquisition in Prediction Markets",
@@ -127,6 +135,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "http://dx.doi.org/10.1016/j.geb.2015.11.002" },
         { label: "Preprint", url: "http://ssrn.com/abstract=2571710" },
       ],
+      abstract: "We study which factors in terms of trading environment and trader characteristics determine individual information acquisition in experimental asset markets. Traders with larger endowments, existing inconclusive information, lower risk aversion, and less experience in financial markets tend to acquire more information. Overall, we find that traders overacquire information, so that informed traders on average obtain negative profits net of information costs. Information acquisition and the associated losses do not diminish over time. This overacquisition phenomenon is inconsistent with predictions of rational expectations equilibrium, and we argue it resembles the overdissipation results from the contest literature. We find that more acquired information in the market leads to smaller differences between fundamental asset values and prices. Thus, the overacquisition phenomenon is a novel explanation for the high forecasting accuracy of prediction markets.",
     },
   ],
   additionalPublications: [
@@ -153,6 +162,7 @@ window.SITE_DATA = {
       links: [
         { label: "Preprint", url: "https://ideas.repec.org/p/zbw/i4rdps/195.html" },
       ],
+      abstract: "Researchers were randomly assigned to human-only, AI-assisted, and AI-led teams to reproduce quantitative social science results. Human-only and AI-assisted teams both outperform AI-led teams, especially in identifying major errors and carrying out meaningful robustness checks.",
     },
     {
       title: "Employee Innovation During Office Work, Work from Home and Hybrid Work",
@@ -166,6 +176,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1038/s41598-024-67122-6" },
         { label: "Preprint", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4888249" },
       ],
+      abstract: "The Covid-19 pandemic forced firms globally to shift workforces to working from home [WFH]. Firms are now struggling to implement a return to working from the office [WFO], as employees enjoy the significant benefits of WFH for their work-life balance. Therefore many firms are adopting a hybrid model in which employees work partly from the office and partly from home. We use unique and detailed data from an Indian IT services firm which contains a precise measure of innovation activity of over 48,000 employees in these three work environments. Our key outcomes are the quantity and quality of ideas submitted by employees. Based on an event study design, the quantity of ideas did not change during the WFH period as compared to WFO, but the quality of ideas suffered. During the later hybrid period, the quantity of submitted ideas fell. In the hybrid phase innovation suffered particularly in teams which were not well coordinated in terms of when they worked at the office or from home. Our findings suggest that remote and hybrid work modes may inhibit collaboration and innovation.",
     },
     {
       title: "A Field Experiment on Attracting Crowdfunders",
@@ -179,6 +190,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1016/j.econlet.2022.110928" },
         { label: "Data", url: "https://data.mendeley.com/datasets/9prftpkdfc/1" },
       ],
+      abstract: "In a field experiment, we tracked whether crowdfunders clicked on a newsletter link to a new project and whether they invested. In terms of clicks, we find that crowdfunders overall respond most to an environmental framing, while older crowdfunders respond more to a financial framing than younger ones, and men respond less to a financial framing than women. There were no significant differences in terms of investments.",
     },
     {
       title: "When Can Decision Makers Learn from Financial Market Prices?",
@@ -192,6 +204,7 @@ window.SITE_DATA = {
         { label: "Journal", url: "https://doi.org/10.1111/jmcb.12799" },
         { label: "Preprint", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2980611" },
       ],
+      abstract: "I analyze a general setting where a policymaker needs information that financial market traders have in order to implement optimal policy, and prices can potentially reveal this information. Policy decisions, in turn, affect asset values. I derive a condition for the existence of fully revealing equilibria in competitive financial markets, which identifies all situations where learning from prices for policy purposes works. I discuss the possibility of using market information for banking supervision and central banking, and the general problem of asset design. I also demonstrate that some corporate prediction markets are ill-designed, and show how to fix it.",
     },
     {
       title: "Improving Decisions with Market Information: An Experiment on Corporate Prediction Markets",
@@ -200,11 +213,12 @@ window.SITE_DATA = {
       journal: "Experimental Economics",
       journalDetail: "24(1), 143-176",
       topics: ["Financial Economics", "Behavioral Economics", "Asset Pricing", "Organizational Economics"],
-      methods: ["Experiment"],
+      methods: ["Experiment", "Theory"],
       links: [
         { label: "Journal", url: "https://doi.org/10.1007/s10683-020-09654-y" },
         { label: "Preprint", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3345569" },
       ],
+      abstract: "We conduct a lab experiment to investigate an important corporate prediction market setting: A manager needs information about the state of a project, which workers have, in order to make a state-dependent decision. Workers can potentially reveal this information by trading in a corporate prediction market. We test two different market designs to determine which provides more information to the manager and leads to better decisions. We also investigate the effect of top-down advice from the market designer to participants on how the prediction market is intended to function. Our results show that the theoretically superior market design performs worse in the lab—in terms of manager decisions—without top-down advice. With advice, manager decisions improve and both market designs perform similarly well, although the theoretically superior market design features less mis-pricing. We provide a behavioral explanation for the failure of the theoretical predictions and discuss implications for corporate prediction markets in the field.",
     },
     {
       title: "Minimum Prices and Social Interactions: Evidence from the German Renewable Energy Program",
@@ -219,6 +233,7 @@ window.SITE_DATA = {
         { label: "Preprint", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2796130" },
         { label: "Data", url: "https://data.mendeley.com/datasets/668gj7dwn7/1" },
       ],
+      abstract: "Minimum prices above the competitive level can lead to allocative inefficiencies. We investigate whether this effect is more pronounced when decision makers are influenced by their social environment. Using data of minimum prices for renewable energy production in Germany, we test if individual decisions to install photovoltaic systems are affected by the investment decisions of others in the area. We implement a propensity score matching routine on municipality level and estimate that existing panels in the municipality increase the probability and number of further installations considerably, even in areas with minimal solar radiation. Thus, social interaction can add secondary inefficiencies to the known allocative problems of minimum prices. The social interaction effect is stronger in areas with more solar radiation and less unemployment. A larger number of existing systems and more concentrated installations increase the social effect further.",
     },
   ],
   workingPapers: [
@@ -234,6 +249,7 @@ window.SITE_DATA = {
       links: [
         { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4419304" },
       ],
+      abstract: "We develop a novel experimental paradigm to study the causal impact of two classes of trading algorithms on price efficiency, trading volume, liquidity, and welfare. In our design, public information about the asset value is revealed during trading, which gives algorithms a reaction speed advantage. We distinguish market-order (aggressive) and limit-order (passive) algorithms, which replace human traders from the baseline markets. Relative to human-only markets, limit-order algorithms improve welfare, although human traders do not benefit, as the surplus is captured by the algorithms. Market-order algorithms do not change welfare, though they do lower human traders' profits. Both types of algorithms improve price efficiency, lower volatility, and increase the share of profits for unsophisticated human traders. Our results offer unique evidence that non-exploitative algorithms can enhance welfare and be beneficial to unsophisticated traders.",
     },
     {
       title: "Innovator Networks Within the Firm and the Quality of Innovation",
@@ -248,6 +264,7 @@ window.SITE_DATA = {
         { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5309987" },
         { label: "Slides", url: "https://drive.google.com/file/d/1-COnSenMUc9MjNF9f2gQQNf-ugQrxTnj/view?usp=drive_link" },
       ],
+      abstract: "Using data on nearly 60,000 ideas from roughly 29,000 innovators within a firm, we study how network position affects innovation, measured by the quality of ideas proposed in a formal suggestion system. Network degree is associated with higher quality ideas. Bridging across structural holes is negatively related to idea quality in the short run, conditional on degree, but has positive effects in the medium run. Bridging also has positive and persisting effects on the quality of colleagues' ideas, suggesting a positive externality from `brokers.' Network size is not related to idea quality, after controlling for degree and bridging. Compared to working from the office, remote work leads to lower average network degree and bridging. This weakening of networks may explain the reduced quality of innovation during remote work found in prior literature.",
     },
     {
       title: "A man's world? Consumption-based investment in the mutual fund industry",
@@ -261,6 +278,7 @@ window.SITE_DATA = {
       links: [
         { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5175911" },
       ],
+      abstract: "We investigate whether consumption preferences affect investment decisions of fund managers, using fund managers' gender as a source of variation in consumption. Male and female managers allocate investments differently across sectors, with consumption patterns closely linked to investment decisions. Portfolios with stronger consumption-related investments are less risky, and exhibit slightly weaker overall performance. Using a novel measure of portfolio masculinity, we find that more masculine portfolios underperform.  A counterfactual analysis highlights potentially large shifts in some sector investments if women managed half the volume, compared to the current <5% of US mutual fund assets, with significant implications for capital allocation.",
     },
   ],
   policyItems: [
