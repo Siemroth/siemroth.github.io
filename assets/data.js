@@ -264,7 +264,7 @@ window.SITE_DATA = {
         { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5309987" },
         { label: "Slides", url: "https://drive.google.com/file/d/1-COnSenMUc9MjNF9f2gQQNf-ugQrxTnj/view?usp=drive_link" },
       ],
-      abstract: "Using data on nearly 60,000 ideas from roughly 29,000 innovators within a firm, we study how network position affects innovation, measured by the quality of ideas proposed in a formal suggestion system. Network degree is associated with higher quality ideas. Bridging across structural holes is negatively related to idea quality in the short run, conditional on degree, but has positive effects in the medium run. Bridging also has positive and persisting effects on the quality of colleagues' ideas, suggesting a positive externality from `brokers.' Network size is not related to idea quality, after controlling for degree and bridging. Compared to working from the office, remote work leads to lower average network degree and bridging. This weakening of networks may explain the reduced quality of innovation during remote work found in prior literature.",
+      abstract: "Using data on nearly 60,000 ideas from roughly 29,000 innovators within a firm, we study how network position affects innovation, measured by the quality of ideas proposed in a formal suggestion system. Network degree is associated with higher quality ideas. Bridging across structural holes is negatively related to idea quality in the short run, conditional on degree, but has positive effects in the medium run. Bridging also has positive and persisting effects on the quality of colleagues' ideas, suggesting a positive externality from 'brokers.' Network size is not related to idea quality, after controlling for degree and bridging. Compared to working from the office, remote work leads to lower average network degree and bridging. This weakening of networks may explain the reduced quality of innovation during remote work found in prior literature.",
     },
     {
       title: "A man's world? Consumption-based investment in the mutual fund industry",
@@ -446,6 +446,7 @@ window.SITE_DATA = {
         { outlet: "The Independent", url: "https://www.independent.co.uk/news/business/business-reporter/post-pandemic-productivity-mirage-business-b1963720.html" },
         { outlet: "New York Post", url: "https://nypost.com/2021/06/12/remote-workers-put-in-longer-hours-but-were-less-efficient-study/" },
         { outlet: "Financial Post", url: "https://financialpost.com/fp-work/the-elusive-work-from-home-sweet-spot-and-a-wave-of-tough-conversations-with-the-boss-this-week-in-work" },
+        { outlet: "Australian Broadcasting Service video [EN]", url: "https://www.youtube.com/watch?v=AdOm0IDi7es" },
         { outlet: "Bank for International Settlements", url: "https://www.bis.org/publ/qtrpdf/r_qt2312f.htm" },
         { outlet: "Podcast: Money For The Rest Of Us", url: "https://player.fm/series/money-for-the-rest-of-us-2137790/why-the-productivity-slowdown-could-lead-to-lower-living-standards" },
         { outlet: "Business Today", url: "https://www.businesstoday.in/current/corporate/working-hours-grew-but-productivity-fell-in-work-from-home-study/story/440188.html" },
@@ -521,6 +522,7 @@ window.SITE_DATA = {
       title: "Minimum Prices and Social Interactions: Evidence from the German Renewable Energy Program",
       paperUrl: "https://doi.org/10.1016/j.eneco.2018.11.034",
       items: [
+        { outlet: "German local TV video [DE]", url: "https://www.youtube.com/watch?v=IGob5kN8SN4" },
         { outlet: "EurActiv [DE]", url: "https://www.euractiv.de/section/energie-und-umwelt/news/studie-zum-eeg-fehlanreize-noch-staerker-als-erwartet/" },
         { outlet: "natur [DE]", url: "http://www.natur.de/de/20/Solaranlagen-mit-Nachahmer-Effekt,1,,1974.html?tid=2" },
         { outlet: "photon.info [DE]", url: "http://www.photon.info/de/news/studie-soziale-faktoren-beeinflussen-den-bau-von-solaranlagen" },
