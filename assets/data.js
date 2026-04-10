@@ -293,6 +293,16 @@ window.SITE_DATA = {
       ],
     },
     {
+      title: "What can governments do when petrol prices rise?",
+      year: "2026",
+      context: "The Conversation",
+      summary: "A little explainer of the policy options for petrol price relief. Explains the cause of price spikes as a recent negative supply shock, and argues that price controls are not a good idea. Suggests instead a measure based on lump sum transfers that retain consumer incentives to substitute away from petrol or save.",
+      summaryExtra: "",
+      links: [
+        { label: "Article", url: "https://theconversation.com/what-can-governments-do-when-petrol-prices-rocket-280094" },
+      ],
+    },
+    {
       title: "Written evidence to the UK parliamentary committee on home-based working",
       year: "2025",
       context: "with Michael Gibbs and Friederike Mengel",
