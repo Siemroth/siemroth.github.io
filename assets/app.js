@@ -204,6 +204,50 @@ function setCurrentYear() {
   });
 }
 
+function initMobileNav() {
+  const header = document.querySelector(".site-header");
+  const toggle = header?.querySelector(".nav-toggle");
+  const nav = header?.querySelector(".site-nav");
+
+  if (!header || !toggle || !nav) {
+    return;
+  }
+
+  function setNavOpen(isOpen) {
+    header.classList.toggle("is-nav-open", isOpen);
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  }
+
+  toggle.addEventListener("click", () => {
+    const isOpen = toggle.getAttribute("aria-expanded") === "true";
+    setNavOpen(!isOpen);
+  });
+
+  nav.addEventListener("click", (event) => {
+    if (event.target.closest(".nav-link")) {
+      setNavOpen(false);
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!header.contains(event.target)) {
+      setNavOpen(false);
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setNavOpen(false);
+    }
+  });
+
+  window.addEventListener("resize", () => {
+    if (window.innerWidth > 680) {
+      setNavOpen(false);
+    }
+  });
+}
+
 function renderHome() {
   const statsContainer = document.querySelector("#home-stats");
   if (!statsContainer) {
@@ -498,6 +542,7 @@ function renderTeaching() {
 
 function init() {
   setCurrentYear();
+  initMobileNav();
   renderHome();
   renderResearch();
   renderPolicy();
