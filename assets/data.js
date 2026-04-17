@@ -240,7 +240,7 @@ window.SITE_DATA = {
     {
       title: "Algorithmic Trading, Price Efficiency and Welfare: An Experimental Approach",
       coauthors: "with Brice Corgnet and Mark DeSantis",
-      pubStatus: "Working paper",
+      pubStatus: "Working Paper",
       year: "2024",
       journal: "",
       journalDetail: "",
@@ -254,7 +254,7 @@ window.SITE_DATA = {
     {
       title: "Innovator Networks Within the Firm and the Quality of Innovation",
       coauthors: "with Michael Gibbs and Friederike Mengel",
-      pubStatus: "Working paper",
+      pubStatus: "Working Paper",
       year: "2025",
       journal: "",
       journalDetail: "",
@@ -267,9 +267,9 @@ window.SITE_DATA = {
       abstract: "Using data on nearly 60,000 ideas from roughly 29,000 innovators within a firm, we study how network position affects innovation, measured by the quality of ideas proposed in a formal suggestion system. Network degree is associated with higher quality ideas. Bridging across structural holes is negatively related to idea quality in the short run, conditional on degree, but has positive effects in the medium run. Bridging also has positive and persisting effects on the quality of colleagues' ideas, suggesting a positive externality from 'brokers.' Network size is not related to idea quality, after controlling for degree and bridging. Compared to working from the office, remote work leads to lower average network degree and bridging. This weakening of networks may explain the reduced quality of innovation during remote work found in prior literature.",
     },
     {
-      title: "A man's world? Consumption-based investment in the mutual fund industry",
+      title: "A Man's World? Consumption-Based Investment in the Mutual Fund Industry",
       coauthors: "with Hans Peter Grüner and Alexandra Niessen-Ruenzi",
-      pubStatus: "Working paper",
+      pubStatus: "Working Paper",
       year: "2025",
       journal: "",
       journalDetail: "",
@@ -458,6 +458,7 @@ window.SITE_DATA = {
         { outlet: "Financial Post", url: "https://financialpost.com/fp-work/the-elusive-work-from-home-sweet-spot-and-a-wave-of-tough-conversations-with-the-boss-this-week-in-work" },
         { outlet: "Australian Broadcasting Service video [EN]", url: "https://www.youtube.com/watch?v=AdOm0IDi7es" },
         { outlet: "Bank for International Settlements", url: "https://www.bis.org/publ/qtrpdf/r_qt2312f.htm" },
+        { outlet: "FYIVT", url: "https://fyivt.com/be-informed/are-remote-workers-more-productive-what-the-research-actually-shows/" },
         { outlet: "Podcast: Money For The Rest Of Us", url: "https://player.fm/series/money-for-the-rest-of-us-2137790/why-the-productivity-slowdown-could-lead-to-lower-living-standards" },
         { outlet: "Business Today", url: "https://www.businesstoday.in/current/corporate/working-hours-grew-but-productivity-fell-in-work-from-home-study/story/440188.html" },
         { outlet: "IT Pro", url: "https://www.itpro.com/business/the-future-of-business/hybrid-work-means-were-burning-out-harder-and-faster-than-ever" },

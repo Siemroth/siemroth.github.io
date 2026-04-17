@@ -1183,12 +1183,8 @@ h3 {
     padding: 0 0.8rem;
   }
 
-  .paper-card-header-compact {
-    flex-wrap: wrap;
-  }
-
-  .paper-citation {
-    width: 100%;
+  .results-panel .paper-card-header-compact .status-pill {
+    display: none;
   }
 }
 
