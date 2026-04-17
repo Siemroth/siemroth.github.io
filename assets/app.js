@@ -138,9 +138,15 @@ function renderPaperCard(paper) {
 function renderResearchPaperCard(paper) {
   const coauthors = (paper.coauthors || "").trim();
   const combinedTags = [...new Set([...(paper.topics || []), ...(paper.methods || [])])];
+  const journal = (paper.journal || "").trim();
   const journalDetail = (paper.journalDetail || "").trim();
   const year = (paper.year || "").trim();
-  const metaLine = `${paper.journal ? `<span class="paper-journal">${escapeHtml(paper.journal)}</span>` : ""}${journalDetail ? `<span class="paper-journal-detail">${paper.journal ? ", " : ""}${escapeHtml(journalDetail)}</span>` : ""}${year ? `<span class="paper-journal-detail">${paper.journal || journalDetail ? ", " : ""}${escapeHtml(year)}</span>` : ""}`;
+  const isWorkingPaper = (paper.statuses || []).includes("working")
+    || (paper.pubStatus || "").trim().toLowerCase() === "working paper"
+    || (paper.statusLabel || "").trim().toLowerCase() === "working paper";
+  const hasJournalInfo = Boolean(journal || journalDetail);
+  const metaLine = `${journal ? `<span class="paper-journal">${escapeHtml(journal)}</span>` : ""}${journalDetail ? `<span class="paper-journal-detail">${journal ? ", " : ""}${escapeHtml(journalDetail)}</span>` : ""}${year ? `<span class="paper-journal-detail">${hasJournalInfo ? ", " : ""}${escapeHtml(year)}</span>` : ""}`;
+  const showMetaLine = metaLine && (!isWorkingPaper || hasJournalInfo);
 
   return `
     <article class="paper-card paper-card-compact">
@@ -150,7 +156,7 @@ function renderResearchPaperCard(paper) {
         </p>
         <span class="status-pill">${escapeHtml(paper.statusLabel || paper.pubStatus)}</span>
       </div>
-      ${metaLine ? `<p class="paper-meta-line">${metaLine}</p>` : ""}
+      ${showMetaLine ? `<p class="paper-meta-line">${metaLine}</p>` : ""}
       ${renderTags(combinedTags, { rowClass: "badge-row-compact", tagClass: "paper-tag-compact" })}
       ${renderResearchActions(paper)}
     </article>

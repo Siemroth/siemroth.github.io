@@ -151,7 +151,7 @@ window.SITE_DATA = {
           links: [],
         }, */
     {
-      title: "Comparing Human-Only, AI-Assisted, and AI-Led Teams on Assessing Research Reproducibility in Quantitative Social Science",
+      title: "AI-Assisted Teams Outperform AI-Led Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science",
       coauthors: "with Brodeur et al. (crowd project)",
       pubStatus: "Forthcoming",
       year: "Forthcoming",
