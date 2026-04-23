@@ -1069,6 +1069,7 @@ h3 {
   }
 
   .results-panel .card-grid-large {
+    grid-template-columns: 1fr;
     padding: 0 1rem;
   }
 }
