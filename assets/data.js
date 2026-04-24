@@ -242,7 +242,7 @@ window.SITE_DATA = {
       coauthors: "with Brice Corgnet and Mark DeSantis",
       pubStatus: "Working Paper",
       year: "2024",
-      journal: "",
+      journal: "R&R at Management Science",
       journalDetail: "",
       topics: ["Financial Economics", "Behavioral Economics", "AI/Algorithms", "Asset Pricing"],
       methods: ["Experiment"],
