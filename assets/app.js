@@ -16,6 +16,21 @@ function createSlug(value) {
     .replace(/^-+|-+$/g, "");
 }
 
+function renderCoauthors(value) {
+  const coauthors = String(value || "").trim();
+  const crowdProjectLabel = "(crowd project)";
+  const crowdProjectNote = "Crowd science project: I am a contributing author, not a lead author, among dozens/hundreds.";
+
+  if (!coauthors.includes(crowdProjectLabel)) {
+    return escapeHtml(coauthors);
+  }
+
+  return coauthors
+    .split(crowdProjectLabel)
+    .map((part) => escapeHtml(part))
+    .join(`<span class="crowd-project-note" data-tooltip="${escapeHtml(crowdProjectNote)}" aria-label="${escapeHtml(crowdProjectNote)}" tabindex="0">${escapeHtml(crowdProjectLabel)}</span>`);
+}
+
 function renderLinkPill(link, options = {}) {
   const pillClass = options.compact ? " link-pill-compact" : "";
   const icon = options.compact ? '<span class="link-symbol" aria-hidden="true">&#8599;</span>' : "";
@@ -118,7 +133,7 @@ function renderPaperCard(paper) {
       <div class="paper-card-header">
         <div>
           <p class="paper-title">${escapeHtml(paper.title)}</p>
-          ${coauthors ? `<p class="paper-authors">${escapeHtml(coauthors)}</p>` : ""}
+          ${coauthors ? `<p class="paper-authors">${renderCoauthors(coauthors)}</p>` : ""}
         </div>
         <span class="status-pill">${escapeHtml(paper.pubStatus)}</span>
       </div>
@@ -152,7 +167,7 @@ function renderResearchPaperCard(paper) {
     <article class="paper-card paper-card-compact">
       <div class="paper-card-header paper-card-header-compact">
         <p class="paper-citation">
-          <span class="paper-title">${escapeHtml(paper.title)}</span>${coauthors ? `<span class="paper-inline-authors"> (${escapeHtml(coauthors)})</span>` : ""}
+          <span class="paper-title">${escapeHtml(paper.title)}</span>${coauthors ? `<span class="paper-inline-authors"> (${renderCoauthors(coauthors)})</span>` : ""}
         </p>
         <span class="status-pill">${escapeHtml(paper.statusLabel || paper.pubStatus)}</span>
       </div>
