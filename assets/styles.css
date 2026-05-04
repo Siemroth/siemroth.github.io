@@ -804,6 +804,31 @@ h3 {
   transform: translate(-50%, 0);
 }
 
+.crowd-project-tooltip {
+  position: fixed;
+  z-index: 50;
+  width: max-content;
+  max-width: min(19rem, calc(100vw - 2rem));
+  padding: 0.45rem 0.55rem;
+  border-radius: 7px;
+  background: var(--ink);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: left;
+  box-shadow: 0 12px 28px -18px rgba(22, 36, 45, 0.5);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(0.2rem);
+  transition: opacity 80ms ease, transform 80ms ease;
+}
+
+.crowd-project-tooltip.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .paper-meta-line {
   color: var(--muted);
   font-size: 0.84rem;
@@ -1220,6 +1245,10 @@ h3 {
 
   h1 {
     font-size: clamp(2rem, 10vw, 3.1rem);
+  }
+
+  .has-crowd-project-tooltips .crowd-project-note::after {
+    content: none;
   }
 
   .results-panel .card-grid-large {

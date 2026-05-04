@@ -269,6 +269,112 @@ function initMobileNav() {
   });
 }
 
+function initCrowdProjectTooltips() {
+  const tooltip = document.createElement("div");
+  const mobileQuery = window.matchMedia("(max-width: 680px)");
+  let activeTrigger = null;
+
+  document.documentElement.classList.add("has-crowd-project-tooltips");
+  tooltip.className = "crowd-project-tooltip";
+  tooltip.setAttribute("role", "tooltip");
+  document.body.append(tooltip);
+
+  function isMobileTooltipEnabled() {
+    return mobileQuery.matches;
+  }
+
+  function hideTooltip() {
+    tooltip.classList.remove("is-visible");
+    activeTrigger = null;
+  }
+
+  function positionTooltip() {
+    if (!activeTrigger || !isMobileTooltipEnabled()) {
+      return;
+    }
+
+    const spacing = 8;
+    const viewportMargin = 16;
+    const triggerRect = activeTrigger.getBoundingClientRect();
+    const tooltipRect = tooltip.getBoundingClientRect();
+    const viewportWidth = document.documentElement.clientWidth;
+    const viewportHeight = window.innerHeight;
+
+    const centeredLeft = triggerRect.left + (triggerRect.width / 2) - (tooltipRect.width / 2);
+    const minLeft = viewportMargin;
+    const maxLeft = Math.max(minLeft, viewportWidth - tooltipRect.width - viewportMargin);
+    const left = Math.min(Math.max(centeredLeft, minLeft), maxLeft);
+
+    let top = triggerRect.top - tooltipRect.height - spacing;
+    if (top < viewportMargin) {
+      top = triggerRect.bottom + spacing;
+    }
+
+    const maxTop = Math.max(viewportMargin, viewportHeight - tooltipRect.height - viewportMargin);
+    tooltip.style.left = `${left}px`;
+    tooltip.style.top = `${Math.min(Math.max(top, viewportMargin), maxTop)}px`;
+  }
+
+  function showTooltip(trigger) {
+    if (!isMobileTooltipEnabled()) {
+      hideTooltip();
+      return;
+    }
+
+    activeTrigger = trigger;
+    tooltip.textContent = trigger.dataset.tooltip || "";
+    tooltip.classList.add("is-visible");
+    positionTooltip();
+  }
+
+  document.addEventListener("pointerover", (event) => {
+    const trigger = event.target.closest(".crowd-project-note");
+    if (!trigger || trigger.contains(event.relatedTarget)) {
+      return;
+    }
+
+    showTooltip(trigger);
+  });
+
+  document.addEventListener("pointerout", (event) => {
+    const trigger = event.target.closest(".crowd-project-note");
+    if (!trigger || trigger.contains(event.relatedTarget)) {
+      return;
+    }
+
+    hideTooltip();
+  });
+
+  document.addEventListener("focusin", (event) => {
+    const trigger = event.target.closest(".crowd-project-note");
+    if (trigger) {
+      showTooltip(trigger);
+    }
+  });
+
+  document.addEventListener("focusout", (event) => {
+    if (event.target.closest(".crowd-project-note")) {
+      hideTooltip();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      hideTooltip();
+    }
+  });
+
+  window.addEventListener("scroll", positionTooltip, { passive: true });
+  window.addEventListener("resize", () => {
+    if (!isMobileTooltipEnabled()) {
+      hideTooltip();
+      return;
+    }
+
+    positionTooltip();
+  });
+}
+
 function renderHome() {
   const statsContainer = document.querySelector("#home-stats");
   if (!statsContainer) {
@@ -564,6 +670,7 @@ function renderTeaching() {
 function init() {
   setCurrentYear();
   initMobileNav();
+  initCrowdProjectTooltips();
   renderHome();
   renderResearch();
   renderPolicy();
