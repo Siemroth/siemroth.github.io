@@ -280,6 +280,16 @@ window.SITE_DATA = {
       ],
       abstract: "We investigate whether consumption preferences affect investment decisions of fund managers, using fund managers' gender as a source of variation in consumption. Male and female managers allocate investments differently across sectors, with consumption patterns closely linked to investment decisions. Portfolios with stronger consumption-related investments are less risky, and exhibit slightly weaker overall performance. Using a novel measure of portfolio masculinity, we find that more masculine portfolios underperform.  A counterfactual analysis highlights potentially large shifts in some sector investments if women managed half the volume, compared to the current <5% of US mutual fund assets, with significant implications for capital allocation.",
     },
+    {
+      title: "#ManyDesignsCarbon: Do Behavioral Interventions Increase Support for Carbon Pricing?",
+      coauthors: "with Blanco et al. (crowd project)",
+      pubStatus: "Working Paper",
+      year: "2026",
+      journal: "R&R at Nature Human Behavior",
+      journalDetail: "",
+      topics: ["Environmental Economics", "Behavioral Economics"],
+      methods: ["Experiment", "Crowd Science"],
+    },
   ],
   policyItems: [
     {
