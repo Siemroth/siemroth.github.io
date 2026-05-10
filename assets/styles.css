@@ -221,9 +221,16 @@ button {
 .hero-grid,
 .intro-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.58fr) minmax(260px, 0.87fr);
   gap: 1.5rem;
   align-items: stretch;
+}
+
+.hero-grid {
+  grid-template-columns: minmax(0, 1.62fr) minmax(280px, 0.78fr);
+}
+
+.intro-grid {
+  grid-template-columns: minmax(0, 1.58fr) minmax(260px, 0.87fr);
 }
 
 .hero-copy,
@@ -245,9 +252,21 @@ button {
 }
 
 .hero-copy {
-  padding: 2rem;
+  padding: 2rem 1.65rem 2rem 2rem;
   position: relative;
   overflow: hidden;
+}
+
+.hero-copy .lead {
+  max-width: none;
+}
+
+.hero-copy .action-row {
+  width: 100%;
+}
+
+.hero-copy .action-row .button {
+  flex: 1 1 10rem;
 }
 
 .hero-copy::after {
