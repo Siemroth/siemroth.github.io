@@ -74,6 +74,7 @@ window.SITE_DATA = {
       links: [
         { label: "Published Article", url: "https://doi.org/10.1093/rfs/hhaa143" },
         { label: "Preprint PDF", url: "https://ssrn.com/abstract=3130307" },
+        { label: "2022 Vernon Smith Award", url: "https://expfin.org/awards/2022-vernon-l-smith-excellence-award/" },
       ],
       abstract: "We investigate the informational content of prices in financial asset markets. To do so we use a large number of market experiments where the amount of information held by traders is precisely observed. We derive a new method to estimate how much of this information is incorporated in market prices. We find that public information is almost completely reflected in prices, but that surprisingly little private information—less than 50%—is incorporated in prices. Our estimates therefore suggest that while semi-strong informational efficiency is consistent with the data, financial market prices may be very far from strong-form efficiency. ",
     },
@@ -104,6 +105,7 @@ window.SITE_DATA = {
       links: [
         { label: "Published Article", url: "https://doi.org/10.1016/j.jet.2018.11.002" },
         { label: "Preprint PDF", url: "http://ssrn.com/abstract=2462177" },
+        { label: "2015 Unicredit Job Market Award", url: "https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/it/microsites/Foundation/Documents/unicreditanduniversities/UniCredit_Universities_Report_2015_Eng.pdf" },
       ],
       abstract: "When can policy makers use policy-relevant information from financial market prices and how does policy affect price informativeness? I analyze a novel setting with noise where a policy maker tries to infer information about a state variable from prices to improve policy decisions, and policy in turn affects asset values. I derive a necessary and sufficient condition for the possibility of information revelation in equilibrium, which might not be possible if the policy reaction to prices punishes traders for revealing their information. If the policy maker is uninformed, then policy objectives do not change price informativeness, but they do if the policy maker has independent information about the state. I also analyze policy maker transparency, and find that policy makers with objectives having a large impact on asset values should publish their information before trading to make prices more informative. In other cases, intransparency can be optimal.",
     },
