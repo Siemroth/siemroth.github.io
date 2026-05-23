@@ -23,7 +23,7 @@ window.SITE_DATA = {
       journal: "International Economic Review",
       journalDetail: "65(3), 1163-1188",
       topics: ["Organizational Economics", "Public Economics"],
-      methods: ["Theory"],
+      methods: ["Economic Theory"],
       links: [
         { label: "Published Article", url: "https://doi.org/10.1111/iere.12684" },
         { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3991922" },
@@ -86,7 +86,7 @@ window.SITE_DATA = {
       journal: "Journal of the European Economic Association",
       journalDetail: "17(5), 1393-1427",
       topics: ["Financial Economics", "Innovation"],
-      methods: ["Theory"],
+      methods: ["Economic Theory"],
       links: [
         { label: "Published Article", url: "https://doi.org/10.1093/jeea/jvy023" },
         { label: "Preprint PDF", url: "https://ssrn.com/abstract=2886401" },
@@ -101,7 +101,7 @@ window.SITE_DATA = {
       journal: "Journal of Economic Theory",
       journalDetail: "179, 240-274",
       topics: ["Financial Economics", "Asset Pricing"],
-      methods: ["Theory"],
+      methods: ["Economic Theory"],
       links: [
         { label: "Published Article", url: "https://doi.org/10.1016/j.jet.2018.11.002" },
         { label: "Preprint PDF", url: "http://ssrn.com/abstract=2462177" },
@@ -201,7 +201,7 @@ window.SITE_DATA = {
       journal: "Journal of Money, Credit and Banking",
       journalDetail: "53(6), 1523-1552",
       topics: ["Financial Economics", "Asset Pricing"],
-      methods: ["Theory"],
+      methods: ["Economic Theory"],
       links: [
         { label: "Published Article", url: "https://doi.org/10.1111/jmcb.12799" },
         { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2980611" },
@@ -215,7 +215,7 @@ window.SITE_DATA = {
       journal: "Experimental Economics",
       journalDetail: "24(1), 143-176",
       topics: ["Financial Economics", "Behavioral Economics", "Asset Pricing", "Organizational Economics"],
-      methods: ["Experiment", "Theory"],
+      methods: ["Experiment", "Economic Theory"],
       links: [
         { label: "Published Article", url: "https://doi.org/10.1007/s10683-020-09654-y" },
         { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3345569" },
