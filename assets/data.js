@@ -105,7 +105,7 @@ window.SITE_DATA = {
       links: [
         { label: "Published Article", url: "https://doi.org/10.1016/j.jet.2018.11.002" },
         { label: "Preprint PDF", url: "http://ssrn.com/abstract=2462177" },
-        { label: "2015 Unicredit Job Market Award", url: "https://www.unicreditgroup.eu/content/dam/unicreditgroup-eu/documents/it/microsites/Foundation/Documents/unicreditanduniversities/UniCredit_Universities_Report_2015_Eng.pdf" },
+        { label: "2015 Unicredit Job Market Award", url: "https://siemroth.github.io/assets/unicredit.pdf" },
       ],
       abstract: "When can policy makers use policy-relevant information from financial market prices and how does policy affect price informativeness? I analyze a novel setting with noise where a policy maker tries to infer information about a state variable from prices to improve policy decisions, and policy in turn affects asset values. I derive a necessary and sufficient condition for the possibility of information revelation in equilibrium, which might not be possible if the policy reaction to prices punishes traders for revealing their information. If the policy maker is uninformed, then policy objectives do not change price informativeness, but they do if the policy maker has independent information about the state. I also analyze policy maker transparency, and find that policy makers with objectives having a large impact on asset values should publish their information before trading to make prices more informative. In other cases, intransparency can be optimal.",
     },
