@@ -1,8 +1,8 @@
 # Website Modern
 
-More substantially redesigned layout variant with cleaner academic typography and a research page that reads more like a compact publication list than a stack of large cards.
+Personal academic website with academic typography and a research page that allows filtering of publications by method or field.
 
-Static replacement for the Google Sites profile, prepared for GitHub Pages.
+Static replacement for a Google Sites profile, prepared for GitHub Pages.
 
 ## Contents
 
@@ -14,22 +14,6 @@ Static replacement for the Google Sites profile, prepared for GitHub Pages.
 - `assets/data.js`: site content and publication tags
 - `assets/app.js`: rendering and filtering logic
 - `assets/styles.css`: shared styling
-
-## Local preview
-
-From the `website` folder:
-
-```powershell
-python -m http.server 8000
-```
-
-Then open `http://localhost:8000`.
-
-## GitHub Pages
-
-1. Push the contents of `website/` into a GitHub repository.
-2. In the repository settings, enable GitHub Pages.
-3. Set the deployment source to the repository root or the branch that contains these files.
 
 ## Maintenance
 
