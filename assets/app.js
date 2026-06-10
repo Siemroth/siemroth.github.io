@@ -150,11 +150,31 @@ function renderPaperCard(paper) {
   `;
 }
 
+function getPaperTitleLink(paper) {
+  const links = (paper.links || []).filter((link) => link && link.url);
+
+  if (!links.length) {
+    return null;
+  }
+
+  const findByLabel = (matcher) => links.find((link) => matcher(String(link.label || "").trim()));
+  return findByLabel((label) => label === "Published Article")
+    || findByLabel((label) => label === "Article" || label.endsWith("Article"))
+    || findByLabel((label) => label === "PDF")
+    || findByLabel((label) => label === "arXiv")
+    || findByLabel((label) => label === "Preprint PDF")
+    || links[0];
+}
+
 function renderResearchPaperCard(paper) {
   const coauthors = (paper.coauthors || "").trim();
   const combinedTags = [...new Set([...(paper.topics || []), ...(paper.methods || [])])];
   const journal = (paper.journal || "").trim();
   const journalDetail = (paper.journalDetail || "").trim();
+  const titleLink = getPaperTitleLink(paper);
+  const titleHtml = titleLink
+    ? `<a class="paper-title paper-title-link" href="${escapeHtml(titleLink.url)}" target="_blank" rel="noreferrer">${escapeHtml(paper.title)}</a>`
+    : `<span class="paper-title">${escapeHtml(paper.title)}</span>`;
   const year = (paper.year || "").trim();
   const isWorkingPaper = (paper.statuses || []).includes("working")
     || (paper.pubStatus || "").trim().toLowerCase() === "working paper"
@@ -167,7 +187,7 @@ function renderResearchPaperCard(paper) {
     <article class="paper-card paper-card-compact">
       <div class="paper-card-header paper-card-header-compact">
         <p class="paper-citation">
-          <span class="paper-title">${escapeHtml(paper.title)}</span>${coauthors ? `<span class="paper-inline-authors"> (${renderCoauthors(coauthors)})</span>` : ""}
+          ${titleHtml}${coauthors ? `<span class="paper-inline-authors"> (${renderCoauthors(coauthors)})</span>` : ""}
         </p>
         <span class="status-pill">${escapeHtml(paper.statusLabel || paper.pubStatus)}</span>
       </div>

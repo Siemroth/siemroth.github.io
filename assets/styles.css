@@ -269,6 +269,11 @@ button {
   flex: 1 1 10rem;
 }
 
+.hero-home .hero-copy .action-row {
+  margin-top: 1.65rem;
+  margin-bottom: 1.75rem;
+}
+
 .hero-copy::after {
   content: "";
   position: absolute;
@@ -416,6 +421,33 @@ h3 {
 .paper-tag {
   background: rgba(31, 79, 121, 0.08);
   color: var(--accent-strong);
+}
+
+.home-fact {
+  margin-top: 0;
+  padding: 0.85rem 1rem;
+  border-left: 3px solid rgba(31, 79, 121, 0.36);
+  border-radius: 0 10px 10px 0;
+  background: rgba(31, 79, 121, 0.06);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.home-fact + .home-fact {
+  margin-top: 1rem;
+}
+
+.home-fact strong {
+  color: var(--accent-strong);
+}
+
+.home-fact a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.18rem;
+  color: var(--accent-strong);
+  font-weight: 700;
 }
 
 .status-pill {
@@ -755,6 +787,26 @@ h3 {
   font-size: 0.99rem;
   font-weight: 700;
   margin-bottom: 0;
+}
+
+.paper-title-link {
+  color: inherit;
+  text-decoration-color: rgba(31, 79, 121, 0.32);
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+  transition: color 120ms ease, text-decoration-color 120ms ease;
+}
+
+.paper-title-link:hover,
+.paper-title-link:focus-visible {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+.paper-title-link:focus-visible {
+  border-radius: 3px;
+  outline: 2px solid rgba(31, 79, 121, 0.28);
+  outline-offset: 2px;
 }
 
 .paper-card-header-compact {
