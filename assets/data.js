@@ -144,13 +144,16 @@ window.SITE_DATA = {
     /*     {
           title: "Are There Manufacturer Differences in Hard-Drive Reliability?",
           coauthors: "with Yeomyung Park",
-          pubStatus: "Forthcoming",
-          year: "Forthcoming",
+          pubStatus: "Published",
+          year: "2026",
           journal: "IEEE Transactions on Cloud Computing",
-          journalDetail: "",
+          journalDetail: "14(2), 1015-1024",
           topics: ["Technology"],
           methods: ["Field Data Analysis"],
-          links: [],
+          links: [
+            { label: "Published Article", url: "https://doi.org/10.1109/TCC.2026.3679404" },
+            { label: "Preprint PDF", url: "http://arxiv.org/abs/2606.29078" },
+          ],
         }, */
     {
       title: "AI-Assisted Teams Outperform AI-Led Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science",
@@ -383,7 +386,7 @@ window.SITE_DATA = {
       { code: "The Capital Asset Pricing Model (Guest Lecture)", title: "Beijing City University", institution: "Undergraduate module", level: "Undergraduate" },
       { code: "Microeconomics A (TA)", title: "University of Mannheim", institution: "Undergraduate module", level: "Undergraduate" },
       { code: "Economic Policy A (TA)", title: "University of Mannheim", institution: "Undergraduate module", level: "Undergraduate" },
-      { code: "Writing and Presenting (TA)", title: "University of Bayreuth", institution: "Undergraduate module", level: "Undergraduate" },
+      { code: "Academic Writing and Presenting (TA)", title: "University of Bayreuth", institution: "Undergraduate module", level: "Undergraduate" },
 
     ],
   },
@@ -461,6 +464,7 @@ window.SITE_DATA = {
         { outlet: "Financial Times IV", url: "https://www.ft.com/content/f9762bb3-644d-4f89-9209-bf1d56724f5c" },
         { outlet: "Wall Street Journal", url: "https://www.wsj.com/articles/work-flexibility-popular-with-employees-is-hardly-a-holy-grail-11624300543" },
         { outlet: "New York Times", url: "https://www.nytimes.com/2021/07/20/opinion/covid-return-to-office.html" },
+        { outlet: "Forbes", url: "https://www.forbes.com/advisor/business/remote-work-vs-rto-statistics/" },
         { outlet: "Wired", url: "https://www.wired.com/story/stop-looking-your-email-youre-video/" },
         { outlet: "Time Magazine", url: "https://time.com/6051955/work-after-covid-19/" },
         { outlet: "The Atlantic", url: "https://www.theatlantic.com/ideas/archive/2021/06/winners-losers-work-home-remote/619181/" },
