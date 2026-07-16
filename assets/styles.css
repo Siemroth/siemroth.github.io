@@ -261,6 +261,30 @@ button {
   max-width: none;
 }
 
+.bio-role {
+  margin-top: 1.2rem;
+}
+
+.bio-inline-link {
+  color: var(--accent-strong);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(31, 79, 121, 0.38);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.bio-inline-link::after {
+  content: " \2197";
+  font-size: 0.82em;
+}
+
+.bio-inline-link:hover,
+.bio-inline-link:focus-visible {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
 .hero-copy .action-row {
   width: 100%;
 }
