@@ -1,5 +1,5 @@
 window.SITE_DATA = {
-  selectedPublications: [
+  papers: [
     {
       title: "Investigating the Analytical Robustness of the Social and Behavioural Sciences",
       coauthors: "with Aczel et al. (crowd project)",
@@ -11,9 +11,10 @@ window.SITE_DATA = {
       methods: ["Crowd Science", "Field Data Analysis"],
       links: [
         { label: "Published Article", url: "https://doi.org/10.1038/s41586-025-09844-9" },
-        { label: "Data", url: "https://osf.io/q5h2c/" },
+        { label: "Data", url: "https://osf.io/q5h2c/" }
       ],
       abstract: "The same dataset can be analysed in different justifiable ways to answer the same research question, potentially challenging the robustness of empirical science. In this crowd initiative, we investigated the degree to which research findings in the social and behavioural sciences are contingent on analysts’ choices. We examined a stratified random sample of 100 studies published between 2009 and 2018, in which, for one claim per study, at least five reanalysts independently reanalysed the original data. The statistical appropriateness of the reanalyses was assessed in peer evaluations, and the robustness indicators were inspected along a range of research characteristics and study designs. We found that 34% of the independent reanalyses yielded the same result (within a tolerance region of ±0.05 Cohen’s d) as the original report; with a four times broader tolerance region, this indicator increased to 57%. Of the reanalyses conducted, 74% reached the same conclusion as the original investigation, 24% yielded no effects or inconclusive results and 2% reported the opposite effect. This exploratory study indicates that the common single-path analyses in social and behavioural research should not be simply assumed to be robust to alternative analyses. Therefore, we recommend the development and use of practices to explore and communicate this neglected source of uncertainty.",
+      isSelected: true
     },
     {
       title: "Ending Wasteful Year-End Spending: On Optimal Budget Rules in Organizations",
@@ -27,9 +28,14 @@ window.SITE_DATA = {
       links: [
         { label: "Published Article", url: "https://doi.org/10.1111/iere.12684" },
         { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3991922" },
-        { label: "AI Video Summary", url: "https://youtu.be/Q2wNoI7OXZE" },
+        { label: "AI Video Summary", url: "https://youtu.be/Q2wNoI7OXZE" }
       ],
       abstract: "What can organizations do to minimize wasteful year-end spending? I introduce a two-period model to derive optimal budget roll-over and audit rules. A principal tasks an agent with using a budget to fulfill the organization's spending needs, which are private information of the agent. The agent can misuse funds for private benefit. The optimal rules allow the agent to roll-over a share of the unused funds, but not necessarily the full share, and in most cases to audit only sufficiently large spending. The optimal audit rule can change once fund roll-over is allowed. Strategically underfunding the agent can be optimal.",
+      isSelected: true,
+      mediaDate: "2022-12-30",
+      mediaItems: [
+        { outlet: "WirtschaftsWoche [DE]", url: "https://www.wiwo.de/politik/konjunktur/die-grosse-jahresendverschwendung-perverse-anreize-bei-den-staatsausgaben/28465570.html" }
+      ]
     },
     {
       title: "Why Do Retail Investors Pick Green Investments? A Lab-in-the-Field Experiment with Crowdfunders",
@@ -43,9 +49,17 @@ window.SITE_DATA = {
       links: [
         { label: "Published Article", url: "https://doi.org/10.1016/j.jebo.2023.02.023" },
         { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3892621" },
-        { label: "Data", url: "https://reshare.ukdataservice.ac.uk/856397/" },
+        { label: "Data", url: "https://reshare.ukdataservice.ac.uk/856397/" }
       ],
       abstract: "Do investors invest in green projects because they expect higher returns, to help the environment, or to help other people? To separate these motivations, we run a decision experiment in which crowdfunders choose between a higher return or a positive environmental impact, and between a higher return or a positive social impact. A majority of investors choose environmental and social impact over higher returns, conditional on large enough impact. Combining the experimental data with historical investments, we find that investors allocate a larger share of funds to green projects if they value environmental impact more and if they expect a higher return, but not if they value social impact more, all else equal. These findings suggest that investors have a preference for positive environmental impact, and satisfy it by investing in green projects. Finally, we introduce new survey measures of impact for future use, which are experimentally validated and predict field behavior.",
+      isSelected: true,
+      mediaDate: "2023-01-01",
+      mediaItems: [
+        { outlet: "FAZ [DE]", url: "https://www.faz.net/aktuell/finanzen/crowdinvesting-wie-die-geldanlage-funktioniert-und-wie-sicher-sie-ist-18010915.html" },
+        { outlet: "P2P Finance News", url: "https://www.p2pfinancenews.co.uk/2021/07/19/p2p-investors-favour-environmental-impact-over-profit/" },
+        { outlet: "Green Rocket [DE]", url: "https://www.greenrocket.com/blog/ergebnisse-der-forschungsarbeit-mit-den-universitaeten-bremen-und-essex-so-gruen-ist-unsere-crowd-wirklich" },
+        { outlet: "Oxford Law Blog", url: "https://www.law.ox.ac.uk/business-law-blog/blog/2021/11/do-retail-investors-value-environmental-impact" }
+      ]
     },
     {
       title: "Work from Home and Productivity: Evidence from Personnel and Analytics Data on Information Technology Professionals",
@@ -58,402 +72,12 @@ window.SITE_DATA = {
       methods: ["Field Data Analysis"],
       links: [
         { label: "Published Article", url: "https://doi.org/10.1086/721803" },
-        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3841457" },
+        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3841457" }
       ],
       abstract: " We study employee productivity before and during the working-from-home period of the COVID-19 pandemic, using personnel and analytics data from over 10,000 skilled professionals at an Indian technology company. Hours worked increased, output declined slightly, and productivity fell 8%-19%. We then analyze determinants of productivity changes. An important source is higher communication costs. Time spent on coordination activities and meetings increased, while uninterrupted work hours shrank considerably. Employees networked with fewer individuals and business units inside and outside the firm and had fewer one-to-one meetings with supervisors. The findings suggest key issues for firms in implementing remote work.",
-    },
-    {
-      title: "How Much Information is Incorporated in Financial Asset Prices? Experimental Evidence",
-      coauthors: "with Lionel Page",
-      pubStatus: "Published",
-      year: "2021",
-      journal: "Review of Financial Studies",
-      journalDetail: "34(9), 4412-4449",
-      topics: ["Financial Economics", "Asset Pricing", "Behavioral Economics"],
-      methods: ["Experiment"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1093/rfs/hhaa143" },
-        { label: "Preprint PDF", url: "https://ssrn.com/abstract=3130307" },
-        { label: "2022 Vernon Smith Award", url: "https://expfin.org/awards/2022-vernon-l-smith-excellence-award/" },
-      ],
-      abstract: "We investigate the informational content of prices in financial asset markets. To do so we use a large number of market experiments where the amount of information held by traders is precisely observed. We derive a new method to estimate how much of this information is incorporated in market prices. We find that public information is almost completely reflected in prices, but that surprisingly little private information—less than 50%—is incorporated in prices. Our estimates therefore suggest that while semi-strong informational efficiency is consistent with the data, financial market prices may be very far from strong-form efficiency. ",
-    },
-    {
-      title: "Crowdfunding, Efficiency, and Inequality",
-      coauthors: "with Hans Peter Grüner",
-      pubStatus: "Published",
-      year: "2019",
-      journal: "Journal of the European Economic Association",
-      journalDetail: "17(5), 1393-1427",
-      topics: ["Financial Economics", "Innovation"],
-      methods: ["Economic Theory"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1093/jeea/jvy023" },
-        { label: "Preprint PDF", url: "https://ssrn.com/abstract=2886401" },
-      ],
-      abstract: "We show how decentralized individual investments can efficiently allocate capital to innovating firms via equity crowdfunding. We develop a model where consumers have privately known consumption preferences and may act as investors. Consumers identify worthwhile investments based on their own preferences and invest in firms whose product they like. In the presence of aggregate demand uncertainty, an efficient capital allocation is achieved if all groups of consumers have enough liquidity to invest. If some groups of consumers cannot invest, capital flows reflect preferences of liquid investors but not future demand. Comparing with traditional financing forms, crowdfunding in the absence of liquidity constraints can be superior unless traditional financiers are fully competitive and perfectly informed.",
-    },
-    {
-      title: "The Informational Content of Prices When Policy Makers React to Financial Markets",
-      coauthors: "",
-      pubStatus: "Published",
-      year: "2019",
-      journal: "Journal of Economic Theory",
-      journalDetail: "179, 240-274",
-      topics: ["Financial Economics", "Asset Pricing"],
-      methods: ["Economic Theory"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1016/j.jet.2018.11.002" },
-        { label: "Preprint PDF", url: "http://ssrn.com/abstract=2462177" },
-        { label: "2015 Unicredit Job Market Award", url: "https://siemroth.github.io/assets/unicredit.pdf" },
-      ],
-      abstract: "When can policy makers use policy-relevant information from financial market prices and how does policy affect price informativeness? I analyze a novel setting with noise where a policy maker tries to infer information about a state variable from prices to improve policy decisions, and policy in turn affects asset values. I derive a necessary and sufficient condition for the possibility of information revelation in equilibrium, which might not be possible if the policy reaction to prices punishes traders for revealing their information. If the policy maker is uninformed, then policy objectives do not change price informativeness, but they do if the policy maker has independent information about the state. I also analyze policy maker transparency, and find that policy makers with objectives having a large impact on asset values should publish their information before trading to make prices more informative. In other cases, intransparency can be optimal.",
-    },
-    {
-      title: "A Field Experiment in Motivating Employee Ideas",
-      coauthors: "with Michael Gibbs and Susanne Neckermann",
-      pubStatus: "Published",
-      year: "2017",
-      journal: "Review of Economics and Statistics",
-      journalDetail: "99(4), 577-590",
-      topics: ["Organizational Economics", "Innovation", "Personnel Economics"],
-      methods: ["Field Experiment", "Field Data Analysis", "Experiment"],
-      links: [
-        { label: "Published Article", url: "http://dx.doi.org/10.1162/REST_a_00631" },
-        { label: "Preprint PDF", url: "http://ssrn.com/abstract=2420965" },
-      ],
-      abstract: "We study a field experiment at a large technology company. Employees were encouraged to submit ideas on process and product improvements. The company randomly assigned nineteen teams into treatment and control groups. Treatment team employees received rewards if their ideas were approved. Nothing changed for control team employees. Our main finding is that rewards substantially increased the quality of ideas. Rewards increased participation in the suggestion system but decreased ideas per participating employee, with no net effect on the quantity of ideas. Broader participation persisted after the reward was discontinued, suggesting habituation. We find no evidence for motivational crowding out.",
-    },
-    {
-      title: "An Experimental Analysis of Information Acquisition in Prediction Markets",
-      coauthors: "with Lionel Page",
-      pubStatus: "Published",
-      year: "2017",
-      journal: "Games and Economic Behavior",
-      journalDetail: "101, 354-378",
-      topics: ["Financial Economics", "Behavioral Economics", "Asset Pricing"],
-      methods: ["Experiment"],
-      links: [
-        { label: "Published Article", url: "http://dx.doi.org/10.1016/j.geb.2015.11.002" },
-        { label: "Preprint PDF", url: "http://ssrn.com/abstract=2571710" },
-      ],
-      abstract: "We study which factors in terms of trading environment and trader characteristics determine individual information acquisition in experimental asset markets. Traders with larger endowments, existing inconclusive information, lower risk aversion, and less experience in financial markets tend to acquire more information. Overall, we find that traders overacquire information, so that informed traders on average obtain negative profits net of information costs. Information acquisition and the associated losses do not diminish over time. This overacquisition phenomenon is inconsistent with predictions of rational expectations equilibrium, and we argue it resembles the overdissipation results from the contest literature. We find that more acquired information in the market leads to smaller differences between fundamental asset values and prices. Thus, the overacquisition phenomenon is a novel explanation for the high forecasting accuracy of prediction markets.",
-    },
-  ],
-  additionalPublications: [
-    /*     {
-          title: "Are There Manufacturer Differences in Hard-Drive Reliability?",
-          coauthors: "with Yeomyung Park",
-          pubStatus: "Published",
-          year: "2026",
-          journal: "IEEE Transactions on Cloud Computing",
-          journalDetail: "14(2), 1015-1024",
-          topics: ["Technology"],
-          methods: ["Field Data Analysis"],
-          links: [
-            { label: "Published Article", url: "https://doi.org/10.1109/TCC.2026.3679404" },
-            { label: "Preprint PDF", url: "http://arxiv.org/abs/2606.29078" },
-          ],
-        }, */
-    {
-      title: "AI-Assisted Teams Outperform AI-Led Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science",
-      coauthors: "with Brodeur et al. (crowd project)",
-      pubStatus: "Published",
-      year: "2026",
-      journal: "Proceedings of the National Academy of Sciences",
-      journalDetail: "123(22), e2524747123",
-      topics: ["Meta Science", "AI/Algorithms"],
-      methods: ["Crowd Science", "Experiment"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1073/pnas.2524747123" },
-        { label: "Preprint PDF", url: "https://ideas.repec.org/p/zbw/i4rdps/195.html" },
-      ],
-      abstract: "Large Language Models (LLMs) such as ChatGPT are transforming how scientists conduct and validate research, offering promise as tools to improve scientific reproducibility. However, computational reproducibility and error detection remain expensive and labor-intensive. We experimentally test how collaboration between researchers and LLM assistants influences the reproduction of quantitative social science findings across different levels of AI autonomy. We randomly assigned 288 researchers to 103 teams working under three conditions: human-only, AI-assisted (using ChatGPT as a collaborative tool), or AI-led (ChatGPT operating with minimal human oversight). Teams reproduced published results from leading social science journals, detected coding errors, and proposed robustness checks. Human-only and AI-assisted teams achieved comparable reproduction rates (94% vs. 91%) and performed similarly on most outcomes, except human-only teams identified significantly more major coding errors. Both substantially outperformed AI-led teams, which achieved only a 37% reproduction rate, detected fewer errors across all categories, proposed weaker robustness checks, and required more time. This autonomous approach, however, likely represents only a lower bound of AI capabilities. Despite rapid model advances, expert human judgment currently remains indispensable for reliable empirical verification. While AI assistance did not degrade most outcomes, it provided no measurable advantages and was associated with reduced detection of major errors. However, the 37% autonomous reproduction rate indicates that AI could provide value in settings where scale or cost constraints preclude human review of papers, even though general-purpose LLMs offer no immediate advantages for human-supervised verification.",
-    },
-    {
-      title: "Employee Innovation During Office Work, Work from Home and Hybrid Work",
-      coauthors: "with Michael Gibbs and Friederike Mengel",
-      year: "2024",
-      journal: "Scientific Reports",
-      journalDetail: "14(1), 17117",
-      topics: ["Organizational Economics", "Innovation", "Personnel Economics", "Remote Work"],
-      methods: ["Field Data Analysis"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1038/s41598-024-67122-6" },
-        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4888249" },
-      ],
-      abstract: "The Covid-19 pandemic forced firms globally to shift workforces to working from home [WFH]. Firms are now struggling to implement a return to working from the office [WFO], as employees enjoy the significant benefits of WFH for their work-life balance. Therefore many firms are adopting a hybrid model in which employees work partly from the office and partly from home. We use unique and detailed data from an Indian IT services firm which contains a precise measure of innovation activity of over 48,000 employees in these three work environments. Our key outcomes are the quantity and quality of ideas submitted by employees. Based on an event study design, the quantity of ideas did not change during the WFH period as compared to WFO, but the quality of ideas suffered. During the later hybrid period, the quantity of submitted ideas fell. In the hybrid phase innovation suffered particularly in teams which were not well coordinated in terms of when they worked at the office or from home. Our findings suggest that remote and hybrid work modes may inhibit collaboration and innovation.",
-    },
-    {
-      title: "A Field Experiment on Attracting Crowdfunders",
-      coauthors: "with Lars Hornuf",
-      year: "2023",
-      journal: "Economics Letters",
-      journalDetail: "222, 110928",
-      topics: ["Sustainable Finance", "Behavioral Economics", "Financial Economics", "Environmental Economics"],
-      methods: ["Field Experiment", "Experiment"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1016/j.econlet.2022.110928" },
-        { label: "Data", url: "https://data.mendeley.com/datasets/9prftpkdfc/1" },
-      ],
-      abstract: "In a field experiment, we tracked whether crowdfunders clicked on a newsletter link to a new project and whether they invested. In terms of clicks, we find that crowdfunders overall respond most to an environmental framing, while older crowdfunders respond more to a financial framing than younger ones, and men respond less to a financial framing than women. There were no significant differences in terms of investments.",
-    },
-    {
-      title: "When Can Decision Makers Learn from Financial Market Prices?",
-      coauthors: "",
-      year: "2021",
-      journal: "Journal of Money, Credit and Banking",
-      journalDetail: "53(6), 1523-1552",
-      topics: ["Financial Economics", "Asset Pricing"],
-      methods: ["Economic Theory"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1111/jmcb.12799" },
-        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2980611" },
-      ],
-      abstract: "I analyze a general setting where a policymaker needs information that financial market traders have in order to implement optimal policy, and prices can potentially reveal this information. Policy decisions, in turn, affect asset values. I derive a condition for the existence of fully revealing equilibria in competitive financial markets, which identifies all situations where learning from prices for policy purposes works. I discuss the possibility of using market information for banking supervision and central banking, and the general problem of asset design. I also demonstrate that some corporate prediction markets are ill-designed, and show how to fix it.",
-    },
-    {
-      title: "Improving Decisions with Market Information: An Experiment on Corporate Prediction Markets",
-      coauthors: "with Ahrash Dianat",
-      year: "2021",
-      journal: "Experimental Economics",
-      journalDetail: "24(1), 143-176",
-      topics: ["Financial Economics", "Behavioral Economics", "Asset Pricing", "Organizational Economics"],
-      methods: ["Experiment", "Economic Theory"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1007/s10683-020-09654-y" },
-        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3345569" },
-      ],
-      abstract: "We conduct a lab experiment to investigate an important corporate prediction market setting: A manager needs information about the state of a project, which workers have, in order to make a state-dependent decision. Workers can potentially reveal this information by trading in a corporate prediction market. We test two different market designs to determine which provides more information to the manager and leads to better decisions. We also investigate the effect of top-down advice from the market designer to participants on how the prediction market is intended to function. Our results show that the theoretically superior market design performs worse in the lab—in terms of manager decisions—without top-down advice. With advice, manager decisions improve and both market designs perform similarly well, although the theoretically superior market design features less mis-pricing. We provide a behavioral explanation for the failure of the theoretical predictions and discuss implications for corporate prediction markets in the field.",
-    },
-    {
-      title: "Minimum Prices and Social Interactions: Evidence from the German Renewable Energy Program",
-      coauthors: "with Justus Inhoffen and Philipp Zahn",
-      year: "2019",
-      journal: "Energy Economics",
-      journalDetail: "78, 350-364",
-      topics: ["Environmental Economics", "Public Economics"],
-      methods: ["Field Data Analysis"],
-      links: [
-        { label: "Published Article", url: "https://doi.org/10.1016/j.eneco.2018.11.034" },
-        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2796130" },
-        { label: "Data", url: "https://data.mendeley.com/datasets/668gj7dwn7/1" },
-      ],
-      abstract: "Minimum prices above the competitive level can lead to allocative inefficiencies. We investigate whether this effect is more pronounced when decision makers are influenced by their social environment. Using data of minimum prices for renewable energy production in Germany, we test if individual decisions to install photovoltaic systems are affected by the investment decisions of others in the area. We implement a propensity score matching routine on municipality level and estimate that existing panels in the municipality increase the probability and number of further installations considerably, even in areas with minimal solar radiation. Thus, social interaction can add secondary inefficiencies to the known allocative problems of minimum prices. The social interaction effect is stronger in areas with more solar radiation and less unemployment. A larger number of existing systems and more concentrated installations increase the social effect further.",
-    },
-  ],
-  workingPapers: [
-    {
-      title: "Algorithmic Trading, Price Efficiency and Welfare: An Experimental Approach",
-      coauthors: "with Brice Corgnet and Mark DeSantis",
-      pubStatus: "Working Paper",
-      year: "2024",
-      journal: "R&R at Management Science",
-      journalDetail: "",
-      topics: ["Financial Economics", "Behavioral Economics", "AI/Algorithms", "Asset Pricing"],
-      methods: ["Experiment"],
-      links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4419304" },
-      ],
-      abstract: "We develop a novel experimental paradigm to study the causal impact of two classes of trading algorithms on price efficiency, trading volume, liquidity, and welfare. In our design, public information about the asset value is revealed during trading, which gives algorithms a reaction speed advantage. We distinguish market-order (aggressive) and limit-order (passive) algorithms, which replace human traders from the baseline markets. Relative to human-only markets, limit-order algorithms improve welfare, although human traders do not benefit, as the surplus is captured by the algorithms. Market-order algorithms do not change welfare, though they do lower human traders' profits. Both types of algorithms improve price efficiency, lower volatility, and increase the share of profits for unsophisticated human traders. Our results offer unique evidence that non-exploitative algorithms can enhance welfare and be beneficial to unsophisticated traders.",
-    },
-    {
-      title: "Innovator Networks Within the Firm and the Quality of Innovation",
-      coauthors: "with Michael Gibbs and Friederike Mengel",
-      pubStatus: "Working Paper",
-      year: "2025",
-      journal: "",
-      journalDetail: "",
-      topics: ["Organizational Economics", "Innovation", "Personnel Economics", "Remote Work"],
-      methods: ["Field Data Analysis"],
-      links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5309987" },
-        { label: "Slides", url: "https://drive.google.com/file/d/1-COnSenMUc9MjNF9f2gQQNf-ugQrxTnj/view?usp=drive_link" },
-      ],
-      abstract: "Using data on nearly 60,000 ideas from roughly 29,000 innovators within a firm, we study how network position affects innovation, measured by the quality of ideas proposed in a formal suggestion system. Network degree is associated with higher quality ideas. Bridging across structural holes is negatively related to idea quality in the short run, conditional on degree, but has positive effects in the medium run. Bridging also has positive and persisting effects on the quality of colleagues' ideas, suggesting a positive externality from 'brokers.' Network size is not related to idea quality, after controlling for degree and bridging. Compared to working from the office, remote work leads to lower average network degree and bridging. This weakening of networks may explain the reduced quality of innovation during remote work found in prior literature.",
-    },
-    {
-      title: "A Man's World? Consumption-Based Investment in the Mutual Fund Industry",
-      coauthors: "with Hans Peter Grüner and Alexandra Niessen-Ruenzi",
-      pubStatus: "Working Paper",
-      year: "2025",
-      journal: "",
-      journalDetail: "",
-      topics: ["Financial Economics"],
-      methods: ["Field Data Analysis"],
-      links: [
-        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5175911" },
-      ],
-      abstract: "We investigate whether consumption preferences affect investment decisions of fund managers, using fund managers' gender as a source of variation in consumption. Male and female managers allocate investments differently across sectors, with consumption patterns closely linked to investment decisions. Portfolios with stronger consumption-related investments are less risky, and exhibit slightly weaker overall performance. Using a novel measure of portfolio masculinity, we find that more masculine portfolios underperform.  A counterfactual analysis highlights potentially large shifts in some sector investments if women managed half the volume, compared to the current <5% of US mutual fund assets, with significant implications for capital allocation.",
-    },
-    {
-      title: "#ManyDesignsCarbon: Do Behavioral Interventions Increase Support for Carbon Pricing?",
-      coauthors: "with Blanco et al. (crowd project)",
-      pubStatus: "Working Paper",
-      year: "2026",
-      journal: "R&R at Nature Human Behavior",
-      journalDetail: "",
-      topics: ["Environmental Economics", "Behavioral Economics"],
-      methods: ["Experiment", "Crowd Science"],
-    },
-  ],
-  policyItems: [
-    {
-      title: "The Optimal Reset-Hour of a Once-Daily Petrol Price Increase Limit",
-      year: "2026",
-      context: "arXiv paper",
-      summary: "Germany announced that petrol stations would only be allowed to increase prices once per day in the future, whereas price decreases would remain unlimited. I ask when this single daily price increase should be allowed. Using detailed German intraday petrol price data, I infer the share of price-sensitive consumers at every hour of the day from the data, given a simple spatial competition model. Using the distribution of inferred shares of price-sensitive consumers over the day, I calculate the resulting equilibrium price path over the day for every possible \"reset-hour\" of the new policy. I find that a 11:00 reset minimizes the quantity-weighted daily price level.",
-      summaryExtra: "",
-      links: [
-        { label: "arXiv", url: "http://arxiv.org/abs/2603.18920" },
-      ],
-    },
-    {
-      title: "What can governments do when petrol prices rise?",
-      year: "2026",
-      context: "The Conversation",
-      summary: "A little explainer on the policy options for help with rising petrol prices. Explains the cause of price spikes as a recent negative supply shock, and argues that price controls are not a good idea. Suggests instead a measure based on lump sum transfers that retain consumer incentives to substitute away from petrol and save.",
-      summaryExtra: "",
-      links: [
-        { label: "Article", url: "https://theconversation.com/what-can-governments-do-when-petrol-prices-rocket-280094" },
-      ],
-    },
-    {
-      title: "Written evidence to the UK parliamentary committee on home-based working",
-      year: "2025",
-      context: "with Michael Gibbs and Friederike Mengel",
-      summary: "Response to a parliamentary committee on remote work, based on our three academic studies on this topic.",
-      summaryExtra: "",
-      links: [
-        { label: "Written evidence", url: "https://committees.parliament.uk/writtenevidence/138962/pdf/" },
-        { label: "Parliamentary inquiry", url: "https://committees.parliament.uk/work/8974/homebased-working" },
-        { label: "JPE Micro Article", url: "https://doi.org/10.1086/721803" },
-        { label: "Scientific Reports Article", url: "https://doi.org/10.1038/s41598-024-67122-6" },
-      ],
-    },
-    {
-      title: "Reducing Wasteful Year-End Spending",
-      year: "2022",
-      context: "Wirtschaftsdienst (in German)",
-      summary: "Suppose your organization gives employees an annual budget to fulfill their tasks. Then employees spend leftover funds on unneeded or low-quality items at year-end, because the funds are about to expire. This is known as \"use it or lose it.\" To address this problem, the paper recommends allowing a partial roll-over of unused funds to the next year. For example, 75% of left-over funds could be added to the employee budget next year, and the remaining 25% are returned to the organization. This provides incentives not to waste funds at year-end, and allows employees to make bigger useful investments in the future. The comment and response highlight that future budgets should not be cut in response to savings, otherwise such a \"ratchet effect\" kills incentives not to waste funds.",
-      summaryExtra: "",
-      links: [
-        { label: "Article", url: "https://doi.org/10.1007/s10273-022-3213-5" },
-        { label: "Comment", url: "https://www.wirtschaftsdienst.eu/inhalt/jahr/2022/heft/8/beitrag/verschwendung-der-jahresendausgaben-im-oeffentlichen-sektor-replik-und-erwiderung-7145.html#das-dezemberfieber-loesung-in-sicht" },
-        { label: "Response", url: "https://www.wirtschaftsdienst.eu/inhalt/jahr/2022/heft/8/beitrag/verschwendung-der-jahresendausgaben-im-oeffentlichen-sektor-replik-und-erwiderung-7145.html#unkomplizierte-mitteluebertragung-vorantreiben" },
-      ],
-    },
-    {
-      title: "Economics Peer-Review: Problems, Recent Developments, and Reform Proposals",
-      year: "2024",
-      context: "The American Economist",
-      summary: "Econ peer-review suffers from several issues such as referee overreach and excessive revisions. The article discusses the main issues, surveys the relevant literature, and recommends solutions for reform. First, enforce referee guidelines that reports must explicitly separate their suggestions into essential and optional, with 3 essential maximum. Second, let authors award the best referee report.  Third, adopt conflict of interest policies for referees and punish non-disclosure. Fourth, use double-blind refereeing. Fifth, make better use of prior reports from other journals. Sixth, pay referees for prompt reports. My article was cited in the AEA/EEA/ES/RES report on economics publishing.",
-      summaryExtra: "",
-      links: [
-        { label: "Article", url: "https://doi.org/10.1177/05694345241269484" },
-        { label: "Publishing report", url: "https://www.econometricsociety.org/uploads/documents/editorial/Improving%20Publication%20Process%20in%20Economics%20Report_2025.pdf" },
-      ],
-    },
-    {
-      title: "Price caps on groceries are not the answer to the UK's inflation problem",
-      year: "2023",
-      context: "The Conversation",
-      summary: "A little explainer for non-economists why price controls are a bad idea to fight inflation. Some suggestions on alternatives. Fun fact: 70% of the UK public wants price controls.",
-      summaryExtra: "",
-      links: [
-        { label: "Article", url: "https://theconversation.com/price-caps-on-groceries-are-not-the-answer-to-the-uks-inflation-problem-206807" },
-      ],
-    },
-    {
-      title: "Minimum Prices and Social Interactions: Evidence from the German Renewable Energy Program",
-      year: "2019",
-      context: "Energy Economics, with Justus Inhoffen and Philipp Zahn",
-      summary: "This research paper analyzes the early period of the German Renewable Energy Act's feed-in tariffs for residential photovoltaic panels. Findings: Panels were not usually installed where they would have generated the most energy. Social interaction or neighborhood effects increased the propensity to adopt such panels even in regions with low solar potential. We argue a more competitive price setting mechanism, such as a multi-unit action, can improve the efficiency of the subsidy by reducing costs but also by getting panels to sunnier regions where they produce more. Auction mechanisms have now indeed replaced the earlier feed-in tariffs in Germany.",
-      summaryExtra: "",
-      links: [
-        { label: "Article", url: "https://doi.org/10.1016/j.eneco.2018.11.034" },
-        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2796130" },
-      ],
-    },
-  ],
-  teaching: {
-    guideUrl: "https://drive.google.com/file/d/1EhJcLQZ_as3AHlbAmGoxqhfqDNccrlU7/view?usp=sharing",
-    guideNote: "All supervised students are urged to read and follow the guidelines on writing term papers and dissertations in economics. The document is updated from time to time.",
-    modules: [
-      { code: "Topics in Financial Economics", title: "University of Essex", institution: "Postgraduate module", level: "Postgraduate" },
-      { code: "Experimental Methods in Economics", title: "University of Essex", institution: "Undergraduate module", level: "Undergraduate" },
-      { code: "Financial Instruments and Capital Markets", title: "University of Essex", institution: "Undergraduate module", level: "Undergraduate" },
-      { code: "The Capital Asset Pricing Model (Guest Lecture)", title: "Beijing City University", institution: "Undergraduate module", level: "Undergraduate" },
-      { code: "Microeconomics A (TA)", title: "University of Mannheim", institution: "Undergraduate module", level: "Undergraduate" },
-      { code: "Economic Policy A (TA)", title: "University of Mannheim", institution: "Undergraduate module", level: "Undergraduate" },
-      { code: "Academic Writing and Presenting (TA)", title: "University of Bayreuth", institution: "Undergraduate module", level: "Undergraduate" },
-
-    ],
-  },
-  mediaGroups: [
-    {
-      title: "A man's world? Consumption-based investment in the mutual fund industry",
-      paperUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5175911",
-      items: [
-        { outlet: "The Telegraph [EN]", url: "https://www.telegraph.co.uk/business/2025/04/25/masculine-investors-do-worse-than-women/" },
-        { outlet: "Press Release [EN]", url: "https://www.uni-mannheim.de/media/Einrichtungen/Abteilung_Kommunikation/Dokumente/Pressemitteilungen/Pressemitteilungen_2025/04_01_Praeferenzen_Fondmanager_innen__003__en.pdf" },
-        { outlet: "Spiegel [DE]", url: "https://www.spiegel.de/wirtschaft/unternehmen/studie-maennliche-fondsmanager-erzielen-schlechtere-ergebnisse-als-weibliche-a-3d3e1268-4fca-42d0-9c44-bc18219c157a" },
-        { outlet: "MDR [DE]", url: "https://www.mdr.de/wissen/psychologie-sozialwissenschaften/unterschied-ob-fonds-von-maennern-oder-frauen-verwaltet-werden-100.html" },
-        { outlet: "WirtschaftsWoche [DE]", url: "https://www.wiwo.de/politik/konjunktur/nachgeforscht-die-persoenlichen-vorlieben-der-fondsmanager/100128337.html" },
-        { outlet: "Springer Professional [DE]", url: "https://www.springerprofessional.de/en/investmentfonds/vermoegensverwaltung/konsumvorlieben-beeinflussen-fondsmanager/50827686" },
-        { outlet: "Bank und Markt [DE]", url: "https://www.kreditwesen.de/bank-markt/marktberichte/blickpunkte/mehr-frauen-fondsbranche-id102063.html" },
-        { outlet: "Geo [DE]", url: "https://www.geo.de/wissen/forschung-und-technik/investmentfonds--warum-weibliche-portfolios-erfolgreicher-sind-35614042.html" },
-        { outlet: "gofeminin [DE]", url: "https://www.gofeminin.de/job-geld/fondmanager-studie-s5624942.html" },
-        { outlet: "t3n [DE]", url: "https://t3n.de/news/bessere-renditen-kluegere-entscheidungen-warum-frauen-die-erfolgreicheren-investoren-sind-laut-studie-1681043" },
-      ],
-    },
-    {
-      title: "Innovator Networks Within the Firm and the Quality of Innovation",
-      paperUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5309987",
-      items: [
-        { outlet: "Network Law Review", url: "https://www.networklawreview.org/employee-networks/" },
-        { outlet: "Financial Times", url: "https://www.ft.com/content/12aa378f-9c39-422b-802a-5b182c99a2bc" },
-        { outlet: "Substack", url: "https://uycetinkaya.substack.com/p/unveiling-the-power-of-workplace" },
-        { outlet: "BFI research brief", url: "https://bfi.uchicago.edu/insights/innovator-networks-within-the-firm-and-the-quality-of-innovation/" },
-        { outlet: "Chicago Booth Review Podcast", url: "https://www.chicagobooth.edu/review/podcast/does-collaboration-really-produce-better-ideas" },
-      ],
-    },
-    {
-      title: "Employee Innovation During Office Work, Work from Home and Hybrid Work",
-      paperUrl: "https://doi.org/10.1038/s41598-024-67122-6",
-      items: [
-        { outlet: "Marginal Revolution", url: "https://marginalrevolution.com/marginalrevolution/2024/07/italian-work-from-home-data.html" },
-        { outlet: "Economic Report of the President 2025", url: "https://www.govinfo.gov/content/pkg/ERP-2025/pdf/ERP-2025.pdf" },
-        { outlet: "Fortune", url: "https://fortune.com/2024/10/31/amazon-aws-remote-work-matt-garman-andy-jassy-work-from-home-return-office/" },
-        { outlet: "Newsweek", url: "https://www.newsweek.com/remote-work-boosting-productivity-hindering-efficiency-2015980" },
-        { outlet: "Harvard Business Review", url: "https://hbr.org/2025/07/hybrid-still-isnt-working" },
-        { outlet: "Australian Fair Work Commission", url: "https://www.fwc.gov.au/documents/sites/am2024-34/am202434-wfh-research-reference-list-110825.pdf" },
-        { outlet: "CORDIS EU", url: "https://cordis.europa.eu/article/id/453230-are-you-less-innovative-when-working-from-home" },
-        { outlet: "New York Post", url: "https://nypost.com/2024/08/24/opinion/working-from-home-can-be-dangerous-to-your-health-and-stifle-innovation-study/" },
-        { outlet: "Eurofound", url: "https://www.bollettinoadapt.it/wp-content/uploads/2025/02/wpef25012.pdf" },
-        { outlet: "Science Magazine", url: "https://scienmag.com/working-from-home-is-stifling-innovation-study-finds/" },
-        { outlet: "Cybernews", url: "https://cybernews.com/tech/remote-work-bad-for-innovation/" },
-        { outlet: "Workplace Insight", url: "https://workplaceinsight.net/remote-work-is-holding-back-innovation-study-claims/" },
-        { outlet: "Business Insider", url: "https://www.businessinsider.in/science/research/news/stagnate-from-home-hybrid-and-remote-work-models-are-killing-innovation-among-employees-study-finds/articleshow/112259825.cms" },
-        { outlet: "Miragenews", url: "https://www.miragenews.com/office-return-wont-solve-canadas-productivity-1494432/" },
-        { outlet: "Colchester Gazette", url: "https://www.gazette-news.co.uk/news/24485030.study-suggests-working-home-hinder-innovation/" },
-        { outlet: "Gamestar [DE]", url: "https://www.gamestar.de/artikel/homeoffice-buero-hybrid-was-ist-am-besten,3436072.html" },
-        { outlet: "Ricoh [JP]", url: "https://blogs.ricoh.co.jp/RISB/workingstyle/post_970.html" },
-        { outlet: "Diario Tecnologia [ES]", url: "https://www.diariotecnologia.es/tras-aos-analizando-el-teletrabajo-y-la-oficina-descubren-que-el-trabajo-hbrido-es-la-peor-opcin-mata-la-innovacin" },
-        { outlet: "Business Insider [ES]", url: "https://www.businessinsider.es/desarrollo-profesional/empresas-nunca-deberian-recurrir-trabajo-hibrido-expertos-1397879" },
-        { outlet: "Gizmodo [ES]", url: "https://es.gizmodo.com/lo-que-nadie-queria-escuchar-sobre-el-trabajo-hibrido-el-modelo-mas-usado-podria-estar-frenando-la-innovacion-2000178528" },
-        { outlet: "Genbeta [ES]", url: "https://www.genbeta.com/a-fondo/anos-analizando-teletrabajo-oficina-descubren-que-trabajo-hibrido-peor-opcion-mata-innovacion" },
-        { outlet: "art department [ES]", url: "https://artdepartment.com.ar/tras-anos-analizando-el-teletrabajo-y-la-oficina-descubren-que-el-trabajo-hibrido-es-la-peor-opcion-mata-la-innovacion/" },
-        { outlet: "Montevideo [ES]", url: "https://www.montevideo.com.uy/Noticias/El-trabajo-hibrido-reduce-la-innovacion-revela-estudio-en-empresa-tecnologica-uc929840" },
-        { outlet: "Meteo Giornale [IT]", url: "https://www.meteogiornale.it/2024/08/lavorare-da-casa-forse-fa-bene-ma-frena-linnovazione/" },
-        { outlet: "News Quest [KR]", url: "https://www.newsquest.co.kr/news/articleView.html?idxno=228716" },
-        { outlet: "Rakyat Pos [ID]", url: "https://jakarta.rakyatpos.id/2024/08/16/penelitian-baru-mengungkapkan-bahwa-bekerja-dari-rumah-menghambat-inovasi/" },
-      ],
-    },
-    {
-      title: "Work from Home and Productivity: Evidence from Personnel and Analytics Data on Information Technology Professionals",
-      paperUrl: "https://doi.org/10.1086/721803",
-      items: [
+      isSelected: true,
+      mediaDate: "2023-01-01",
+      mediaItems: [
         { outlet: "The Economist", url: "https://www.economist.com/business/2021/06/10/remote-workers-work-longer-not-more-efficiently" },
         { outlet: "The Economist II", url: "https://www.economist.com/graphic-detail/2021/06/06/will-workers-return-to-the-office" },
         { outlet: "The Economist III", url: "https://www.economist.com/finance-and-economics/2021/10/30/remote-first-work-is-taking-over-the-rich-world" },
@@ -506,58 +130,466 @@ window.SITE_DATA = {
         { outlet: "Nordregio report", url: "https://www.diva-portal.org/smash/get/diva2:1851290/FULLTEXT01.pdf" },
         { outlet: "ETLA Finnish report [FI]", url: "https://ek.fi/wp-content/uploads/2025/03/ETLA-Muistio-Brief-154.pdf" },
         { outlet: "Podcast: The Near Futurist", url: "https://open.spotify.com/episode/1mgu9RNpqcLrsJVOSPjxpj" },
-        { outlet: "Thematiks podcast interview", url: "https://www.thematiks.com/p/working-from-home-has-been-a-bad" },
+        { outlet: "Thematiks podcast interview", url: "https://www.thematiks.com/p/working-from-home-has-been-a-bad" }
+      ]
+    },
+    {
+      title: "How Much Information is Incorporated in Financial Asset Prices? Experimental Evidence",
+      coauthors: "with Lionel Page",
+      pubStatus: "Published",
+      year: "2021",
+      journal: "Review of Financial Studies",
+      journalDetail: "34(9), 4412-4449",
+      topics: ["Financial Economics", "Asset Pricing", "Behavioral Economics"],
+      methods: ["Experiment"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1093/rfs/hhaa143" },
+        { label: "Preprint PDF", url: "https://ssrn.com/abstract=3130307" },
+        { label: "2022 Vernon Smith Award", url: "https://expfin.org/awards/2022-vernon-l-smith-excellence-award/" }
       ],
+      abstract: "We investigate the informational content of prices in financial asset markets. To do so we use a large number of market experiments where the amount of information held by traders is precisely observed. We derive a new method to estimate how much of this information is incorporated in market prices. We find that public information is almost completely reflected in prices, but that surprisingly little private information—less than 50%—is incorporated in prices. Our estimates therefore suggest that while semi-strong informational efficiency is consistent with the data, financial market prices may be very far from strong-form efficiency. ",
+      isSelected: true
+    },
+    {
+      title: "Crowdfunding, Efficiency, and Inequality",
+      coauthors: "with Hans Peter Grüner",
+      pubStatus: "Published",
+      year: "2019",
+      journal: "Journal of the European Economic Association",
+      journalDetail: "17(5), 1393-1427",
+      topics: ["Financial Economics", "Innovation"],
+      methods: ["Economic Theory"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1093/jeea/jvy023" },
+        { label: "Preprint PDF", url: "https://ssrn.com/abstract=2886401" }
+      ],
+      abstract: "We show how decentralized individual investments can efficiently allocate capital to innovating firms via equity crowdfunding. We develop a model where consumers have privately known consumption preferences and may act as investors. Consumers identify worthwhile investments based on their own preferences and invest in firms whose product they like. In the presence of aggregate demand uncertainty, an efficient capital allocation is achieved if all groups of consumers have enough liquidity to invest. If some groups of consumers cannot invest, capital flows reflect preferences of liquid investors but not future demand. Comparing with traditional financing forms, crowdfunding in the absence of liquidity constraints can be superior unless traditional financiers are fully competitive and perfectly informed.",
+      isSelected: true
+    },
+    {
+      title: "The Informational Content of Prices When Policy Makers React to Financial Markets",
+      coauthors: "",
+      pubStatus: "Published",
+      year: "2019",
+      journal: "Journal of Economic Theory",
+      journalDetail: "179, 240-274",
+      topics: ["Financial Economics", "Asset Pricing"],
+      methods: ["Economic Theory"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1016/j.jet.2018.11.002" },
+        { label: "Preprint PDF", url: "http://ssrn.com/abstract=2462177" },
+        { label: "2015 Unicredit Job Market Award", url: "https://siemroth.github.io/assets/unicredit.pdf" }
+      ],
+      abstract: "When can policy makers use policy-relevant information from financial market prices and how does policy affect price informativeness? I analyze a novel setting with noise where a policy maker tries to infer information about a state variable from prices to improve policy decisions, and policy in turn affects asset values. I derive a necessary and sufficient condition for the possibility of information revelation in equilibrium, which might not be possible if the policy reaction to prices punishes traders for revealing their information. If the policy maker is uninformed, then policy objectives do not change price informativeness, but they do if the policy maker has independent information about the state. I also analyze policy maker transparency, and find that policy makers with objectives having a large impact on asset values should publish their information before trading to make prices more informative. In other cases, intransparency can be optimal.",
+      isSelected: true
     },
     {
       title: "A Field Experiment in Motivating Employee Ideas",
-      paperUrl: "http://www.mitpressjournals.org/doi/abs/10.1162/REST_a_00631",
-      items: [
+      coauthors: "with Michael Gibbs and Susanne Neckermann",
+      pubStatus: "Published",
+      year: "2017",
+      journal: "Review of Economics and Statistics",
+      journalDetail: "99(4), 577-590",
+      topics: ["Organizational Economics", "Innovation", "Personnel Economics"],
+      methods: ["Field Experiment", "Field Data Analysis", "Experiment"],
+      links: [
+        { label: "Published Article", url: "http://dx.doi.org/10.1162/REST_a_00631" },
+        { label: "Preprint PDF", url: "http://ssrn.com/abstract=2420965" }
+      ],
+      abstract: "We study a field experiment at a large technology company. Employees were encouraged to submit ideas on process and product improvements. The company randomly assigned nineteen teams into treatment and control groups. Treatment team employees received rewards if their ideas were approved. Nothing changed for control team employees. Our main finding is that rewards substantially increased the quality of ideas. Rewards increased participation in the suggestion system but decreased ideas per participating employee, with no net effect on the quantity of ideas. Broader participation persisted after the reward was discontinued, suggesting habituation. We find no evidence for motivational crowding out.",
+      isSelected: true,
+      mediaDate: "2017-01-01",
+      mediaItems: [
         { outlet: "Harvard Business Review", url: "https://hbr.org/2015/02/financial-rewards-make-people-suggest-fewer-but-better-ideas" },
         { outlet: "Bloomberg Businessweek", url: "http://www.bloomberg.com/bw/articles/2014-11-28/four-ways-to-get-the-smartest-ideas-from-employees" },
         { outlet: "Capital Ideas", url: "http://review.chicagobooth.edu/magazine/fall-2014/four-ways-companies-can-encourage-innovation" },
-        { outlet: "Inc.", url: "http://www.inc.com/will-yakowicz/big-bucks-will-get-you-big-ideas.html" },
-      ],
-    },
-    {
-      title: "Ending Wasteful Year-End Spending: On Optimal Budget Rules in Organizations",
-      paperUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3991922",
-      items: [
-        { outlet: "WirtschaftsWoche [DE]", url: "https://www.wiwo.de/politik/konjunktur/die-grosse-jahresendverschwendung-perverse-anreize-bei-den-staatsausgaben/28465570.html" },
-      ],
-    },
-    {
-      title: "Do retail investors value environmental impact? A lab-in-the-field experiment with crowdfunders",
-      paperUrl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3888258",
-      items: [
-        { outlet: "FAZ [DE]", url: "https://www.faz.net/aktuell/finanzen/crowdinvesting-wie-die-geldanlage-funktioniert-und-wie-sicher-sie-ist-18010915.html" },
-        { outlet: "P2P Finance News", url: "https://www.p2pfinancenews.co.uk/2021/07/19/p2p-investors-favour-environmental-impact-over-profit/" },
-        { outlet: "Green Rocket [DE]", url: "https://www.greenrocket.com/blog/ergebnisse-der-forschungsarbeit-mit-den-universitaeten-bremen-und-essex-so-gruen-ist-unsere-crowd-wirklich" },
-        { outlet: "Oxford Law Blog", url: "https://www.law.ox.ac.uk/business-law-blog/blog/2021/11/do-retail-investors-value-environmental-impact" },
-      ],
+        { outlet: "Inc.", url: "http://www.inc.com/will-yakowicz/big-bucks-will-get-you-big-ideas.html" }
+      ]
     },
     {
       title: "An Experimental Analysis of Information Acquisition in Prediction Markets",
-      paperUrl: "http://dx.doi.org/10.1016/j.geb.2015.11.002",
-      items: [
+      coauthors: "with Lionel Page",
+      pubStatus: "Published",
+      year: "2017",
+      journal: "Games and Economic Behavior",
+      journalDetail: "101, 354-378",
+      topics: ["Financial Economics", "Behavioral Economics", "Asset Pricing"],
+      methods: ["Experiment"],
+      links: [
+        { label: "Published Article", url: "http://dx.doi.org/10.1016/j.geb.2015.11.002" },
+        { label: "Preprint PDF", url: "http://ssrn.com/abstract=2571710" }
+      ],
+      abstract: "We study which factors in terms of trading environment and trader characteristics determine individual information acquisition in experimental asset markets. Traders with larger endowments, existing inconclusive information, lower risk aversion, and less experience in financial markets tend to acquire more information. Overall, we find that traders overacquire information, so that informed traders on average obtain negative profits net of information costs. Information acquisition and the associated losses do not diminish over time. This overacquisition phenomenon is inconsistent with predictions of rational expectations equilibrium, and we argue it resembles the overdissipation results from the contest literature. We find that more acquired information in the market leads to smaller differences between fundamental asset values and prices. Thus, the overacquisition phenomenon is a novel explanation for the high forecasting accuracy of prediction markets.",
+      isSelected: true,
+      mediaDate: "2017-01-01",
+      mediaItems: [
         { outlet: "The Conversation (August 2020)", url: "https://theconversation.com/will-trump-or-biden-win-the-us-election-this-could-be-a-better-predictor-than-the-polls-143380" },
         { outlet: "Yahoo News", url: "https://uk.news.yahoo.com/trump-biden-win-us-election-142831579.html" },
         { outlet: "The Conversation (January 2018)", url: "https://theconversation.com/what-are-the-odds-of-trump-surviving-2018-in-office-an-expert-crunches-the-numbers-90047" },
         { outlet: "The Independent", url: "http://www.independent.co.uk/voices/trump-impeachment-chances-odds-first-term-survive-2018-a8166621.html" },
-        { outlet: "The Conversation (August 2017)", url: "http://theconversation.com/what-the-prediction-markets-tell-us-about-the-german-election-82227" },
+        { outlet: "The Conversation (August 2017)", url: "http://theconversation.com/what-the-prediction-markets-tell-us-about-the-german-election-82227" }
+      ]
+    },
+    {
+      title: "AI-Assisted Teams Outperform AI-Led Teams but Not Human-Only Teams in Assessing Research Reproducibility in Quantitative Social Science",
+      coauthors: "with Brodeur et al. (crowd project)",
+      pubStatus: "Published",
+      year: "2026",
+      journal: "Proceedings of the National Academy of Sciences",
+      journalDetail: "123(22), e2524747123",
+      topics: ["Meta Science", "AI/Algorithms"],
+      methods: ["Crowd Science", "Experiment"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1073/pnas.2524747123" },
+        { label: "Preprint PDF", url: "https://ideas.repec.org/p/zbw/i4rdps/195.html" }
       ],
+      abstract: "Large Language Models (LLMs) such as ChatGPT are transforming how scientists conduct and validate research, offering promise as tools to improve scientific reproducibility. However, computational reproducibility and error detection remain expensive and labor-intensive. We experimentally test how collaboration between researchers and LLM assistants influences the reproduction of quantitative social science findings across different levels of AI autonomy. We randomly assigned 288 researchers to 103 teams working under three conditions: human-only, AI-assisted (using ChatGPT as a collaborative tool), or AI-led (ChatGPT operating with minimal human oversight). Teams reproduced published results from leading social science journals, detected coding errors, and proposed robustness checks. Human-only and AI-assisted teams achieved comparable reproduction rates (94% vs. 91%) and performed similarly on most outcomes, except human-only teams identified significantly more major coding errors. Both substantially outperformed AI-led teams, which achieved only a 37% reproduction rate, detected fewer errors across all categories, proposed weaker robustness checks, and required more time. This autonomous approach, however, likely represents only a lower bound of AI capabilities. Despite rapid model advances, expert human judgment currently remains indispensable for reliable empirical verification. While AI assistance did not degrade most outcomes, it provided no measurable advantages and was associated with reduced detection of major errors. However, the 37% autonomous reproduction rate indicates that AI could provide value in settings where scale or cost constraints preclude human review of papers, even though general-purpose LLMs offer no immediate advantages for human-supervised verification."
+    },
+    {
+      title: "Employee Innovation During Office Work, Work from Home and Hybrid Work",
+      coauthors: "with Michael Gibbs and Friederike Mengel",
+      year: "2024",
+      journal: "Scientific Reports",
+      journalDetail: "14(1), 17117",
+      topics: ["Organizational Economics", "Innovation", "Personnel Economics", "Remote Work"],
+      methods: ["Field Data Analysis"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1038/s41598-024-67122-6" },
+        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4888249" }
+      ],
+      abstract: "The Covid-19 pandemic forced firms globally to shift workforces to working from home [WFH]. Firms are now struggling to implement a return to working from the office [WFO], as employees enjoy the significant benefits of WFH for their work-life balance. Therefore many firms are adopting a hybrid model in which employees work partly from the office and partly from home. We use unique and detailed data from an Indian IT services firm which contains a precise measure of innovation activity of over 48,000 employees in these three work environments. Our key outcomes are the quantity and quality of ideas submitted by employees. Based on an event study design, the quantity of ideas did not change during the WFH period as compared to WFO, but the quality of ideas suffered. During the later hybrid period, the quantity of submitted ideas fell. In the hybrid phase innovation suffered particularly in teams which were not well coordinated in terms of when they worked at the office or from home. Our findings suggest that remote and hybrid work modes may inhibit collaboration and innovation.",
+      pubStatus: "Published",
+      mediaDate: "2024-01-01",
+      mediaItems: [
+        { outlet: "Financial Times", url: "https://www.ft.com/content/12aa378f-9c39-422b-802a-5b182c99a2bc" },
+        { outlet: "Marginal Revolution", url: "https://marginalrevolution.com/marginalrevolution/2024/07/italian-work-from-home-data.html" },
+        { outlet: "Economic Report of the President 2025", url: "https://www.govinfo.gov/content/pkg/ERP-2025/pdf/ERP-2025.pdf" },
+        { outlet: "Fortune", url: "https://fortune.com/2024/10/31/amazon-aws-remote-work-matt-garman-andy-jassy-work-from-home-return-office/" },
+        { outlet: "Newsweek", url: "https://www.newsweek.com/remote-work-boosting-productivity-hindering-efficiency-2015980" },
+        { outlet: "Harvard Business Review", url: "https://hbr.org/2025/07/hybrid-still-isnt-working" },
+        { outlet: "Australian Fair Work Commission", url: "https://www.fwc.gov.au/documents/sites/am2024-34/am202434-wfh-research-reference-list-110825.pdf" },
+        { outlet: "CORDIS EU", url: "https://cordis.europa.eu/article/id/453230-are-you-less-innovative-when-working-from-home" },
+        { outlet: "New York Post", url: "https://nypost.com/2024/08/24/opinion/working-from-home-can-be-dangerous-to-your-health-and-stifle-innovation-study/" },
+        { outlet: "Eurofound", url: "https://www.bollettinoadapt.it/wp-content/uploads/2025/02/wpef25012.pdf" },
+        { outlet: "Science Magazine", url: "https://scienmag.com/working-from-home-is-stifling-innovation-study-finds/" },
+        { outlet: "Cybernews", url: "https://cybernews.com/tech/remote-work-bad-for-innovation/" },
+        { outlet: "Workplace Insight", url: "https://workplaceinsight.net/remote-work-is-holding-back-innovation-study-claims/" },
+        { outlet: "Business Insider", url: "https://www.businessinsider.in/science/research/news/stagnate-from-home-hybrid-and-remote-work-models-are-killing-innovation-among-employees-study-finds/articleshow/112259825.cms" },
+        { outlet: "Miragenews", url: "https://www.miragenews.com/office-return-wont-solve-canadas-productivity-1494432/" },
+        { outlet: "Colchester Gazette", url: "https://www.gazette-news.co.uk/news/24485030.study-suggests-working-home-hinder-innovation/" },
+        { outlet: "Gamestar [DE]", url: "https://www.gamestar.de/artikel/homeoffice-buero-hybrid-was-ist-am-besten,3436072.html" },
+        { outlet: "Ricoh [JP]", url: "https://blogs.ricoh.co.jp/RISB/workingstyle/post_970.html" },
+        { outlet: "Diario Tecnologia [ES]", url: "https://www.diariotecnologia.es/tras-aos-analizando-el-teletrabajo-y-la-oficina-descubren-que-el-trabajo-hbrido-es-la-peor-opcin-mata-la-innovacin" },
+        { outlet: "Business Insider [ES]", url: "https://www.businessinsider.es/desarrollo-profesional/empresas-nunca-deberian-recurrir-trabajo-hibrido-expertos-1397879" },
+        { outlet: "Gizmodo [ES]", url: "https://es.gizmodo.com/lo-que-nadie-queria-escuchar-sobre-el-trabajo-hibrido-el-modelo-mas-usado-podria-estar-frenando-la-innovacion-2000178528" },
+        { outlet: "Genbeta [ES]", url: "https://www.genbeta.com/a-fondo/anos-analizando-teletrabajo-oficina-descubren-que-trabajo-hibrido-peor-opcion-mata-innovacion" },
+        { outlet: "art department [ES]", url: "https://artdepartment.com.ar/tras-anos-analizando-el-teletrabajo-y-la-oficina-descubren-que-el-trabajo-hibrido-es-la-peor-opcion-mata-la-innovacion/" },
+        { outlet: "Montevideo [ES]", url: "https://www.montevideo.com.uy/Noticias/El-trabajo-hibrido-reduce-la-innovacion-revela-estudio-en-empresa-tecnologica-uc929840" },
+        { outlet: "Meteo Giornale [IT]", url: "https://www.meteogiornale.it/2024/08/lavorare-da-casa-forse-fa-bene-ma-frena-linnovazione/" },
+        { outlet: "News Quest [KR]", url: "https://www.newsquest.co.kr/news/articleView.html?idxno=228716" },
+        { outlet: "Rakyat Pos [ID]", url: "https://jakarta.rakyatpos.id/2024/08/16/penelitian-baru-mengungkapkan-bahwa-bekerja-dari-rumah-menghambat-inovasi/" }
+      ]
+    },
+    {
+      title: "A Field Experiment on Attracting Crowdfunders",
+      coauthors: "with Lars Hornuf",
+      year: "2023",
+      journal: "Economics Letters",
+      journalDetail: "222, 110928",
+      topics: ["Sustainable Finance", "Behavioral Economics", "Financial Economics", "Environmental Economics"],
+      methods: ["Field Experiment", "Experiment"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1016/j.econlet.2022.110928" },
+        { label: "Data", url: "https://data.mendeley.com/datasets/9prftpkdfc/1" }
+      ],
+      abstract: "In a field experiment, we tracked whether crowdfunders clicked on a newsletter link to a new project and whether they invested. In terms of clicks, we find that crowdfunders overall respond most to an environmental framing, while older crowdfunders respond more to a financial framing than younger ones, and men respond less to a financial framing than women. There were no significant differences in terms of investments.",
+      pubStatus: "Published"
+    },
+    {
+      title: "When Can Decision Makers Learn from Financial Market Prices?",
+      coauthors: "",
+      year: "2021",
+      journal: "Journal of Money, Credit and Banking",
+      journalDetail: "53(6), 1523-1552",
+      topics: ["Financial Economics", "Asset Pricing"],
+      methods: ["Economic Theory"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1111/jmcb.12799" },
+        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2980611" }
+      ],
+      abstract: "I analyze a general setting where a policymaker needs information that financial market traders have in order to implement optimal policy, and prices can potentially reveal this information. Policy decisions, in turn, affect asset values. I derive a condition for the existence of fully revealing equilibria in competitive financial markets, which identifies all situations where learning from prices for policy purposes works. I discuss the possibility of using market information for banking supervision and central banking, and the general problem of asset design. I also demonstrate that some corporate prediction markets are ill-designed, and show how to fix it.",
+      pubStatus: "Published"
+    },
+    {
+      title: "Improving Decisions with Market Information: An Experiment on Corporate Prediction Markets",
+      coauthors: "with Ahrash Dianat",
+      year: "2021",
+      journal: "Experimental Economics",
+      journalDetail: "24(1), 143-176",
+      topics: ["Financial Economics", "Behavioral Economics", "Asset Pricing", "Organizational Economics"],
+      methods: ["Experiment", "Economic Theory"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1007/s10683-020-09654-y" },
+        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3345569" }
+      ],
+      abstract: "We conduct a lab experiment to investigate an important corporate prediction market setting: A manager needs information about the state of a project, which workers have, in order to make a state-dependent decision. Workers can potentially reveal this information by trading in a corporate prediction market. We test two different market designs to determine which provides more information to the manager and leads to better decisions. We also investigate the effect of top-down advice from the market designer to participants on how the prediction market is intended to function. Our results show that the theoretically superior market design performs worse in the lab—in terms of manager decisions—without top-down advice. With advice, manager decisions improve and both market designs perform similarly well, although the theoretically superior market design features less mis-pricing. We provide a behavioral explanation for the failure of the theoretical predictions and discuss implications for corporate prediction markets in the field.",
+      pubStatus: "Published"
     },
     {
       title: "Minimum Prices and Social Interactions: Evidence from the German Renewable Energy Program",
-      paperUrl: "https://doi.org/10.1016/j.eneco.2018.11.034",
-      items: [
+      coauthors: "with Justus Inhoffen and Philipp Zahn",
+      year: "2019",
+      journal: "Energy Economics",
+      journalDetail: "78, 350-364",
+      topics: ["Environmental Economics", "Public Economics"],
+      methods: ["Field Data Analysis"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1016/j.eneco.2018.11.034" },
+        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2796130" },
+        { label: "Data", url: "https://data.mendeley.com/datasets/668gj7dwn7/1" }
+      ],
+      abstract: "Minimum prices above the competitive level can lead to allocative inefficiencies. We investigate whether this effect is more pronounced when decision makers are influenced by their social environment. Using data of minimum prices for renewable energy production in Germany, we test if individual decisions to install photovoltaic systems are affected by the investment decisions of others in the area. We implement a propensity score matching routine on municipality level and estimate that existing panels in the municipality increase the probability and number of further installations considerably, even in areas with minimal solar radiation. Thus, social interaction can add secondary inefficiencies to the known allocative problems of minimum prices. The social interaction effect is stronger in areas with more solar radiation and less unemployment. A larger number of existing systems and more concentrated installations increase the social effect further.",
+      pubStatus: "Published",
+      mediaDate: "2019-01-01",
+      mediaItems: [
         { outlet: "German local TV video [DE]", url: "https://www.youtube.com/watch?v=IGob5kN8SN4" },
         { outlet: "EurActiv [DE]", url: "https://www.euractiv.de/section/energie-und-umwelt/news/studie-zum-eeg-fehlanreize-noch-staerker-als-erwartet/" },
         { outlet: "natur [DE]", url: "http://www.natur.de/de/20/Solaranlagen-mit-Nachahmer-Effekt,1,,1974.html?tid=2" },
         { outlet: "photon.info [DE]", url: "http://www.photon.info/de/news/studie-soziale-faktoren-beeinflussen-den-bau-von-solaranlagen" },
         { outlet: "pv magazine [DE]", url: "http://www.pv-magazine.de/nachrichten/details/beitrag/studie--was-mein-nachbar-hat--das-will-ich-auch_100023825/" },
-        { outlet: "University press release [DE]", url: "https://drive.google.com/file/d/1_7qJjKTZw4X-lpIWECqwyYOPIKWAsIxv/view?usp=sharing" },
-      ],
+        { outlet: "University press release [DE]", url: "https://drive.google.com/file/d/1_7qJjKTZw4X-lpIWECqwyYOPIKWAsIxv/view?usp=sharing" }
+      ]
     },
+    {
+      title: "Algorithmic Trading, Price Efficiency and Welfare: An Experimental Approach",
+      coauthors: "with Brice Corgnet and Mark DeSantis",
+      pubStatus: "Working Paper",
+      year: "2024",
+      journal: "R&R at Management Science",
+      journalDetail: "",
+      topics: ["Financial Economics", "Behavioral Economics", "AI/Algorithms", "Asset Pricing"],
+      methods: ["Experiment"],
+      links: [
+        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4419304" }
+      ],
+      abstract: "We develop a novel experimental paradigm to study the causal impact of two classes of trading algorithms on price efficiency, trading volume, liquidity, and welfare. In our design, public information about the asset value is revealed during trading, which gives algorithms a reaction speed advantage. We distinguish market-order (aggressive) and limit-order (passive) algorithms, which replace human traders from the baseline markets. Relative to human-only markets, limit-order algorithms improve welfare, although human traders do not benefit, as the surplus is captured by the algorithms. Market-order algorithms do not change welfare, though they do lower human traders' profits. Both types of algorithms improve price efficiency, lower volatility, and increase the share of profits for unsophisticated human traders. Our results offer unique evidence that non-exploitative algorithms can enhance welfare and be beneficial to unsophisticated traders."
+    },
+    {
+      title: "Innovator Networks Within the Firm and the Quality of Innovation",
+      coauthors: "with Michael Gibbs and Friederike Mengel",
+      pubStatus: "Working Paper",
+      year: "2025",
+      journal: "",
+      journalDetail: "",
+      topics: ["Organizational Economics", "Innovation", "Personnel Economics", "Remote Work"],
+      methods: ["Field Data Analysis"],
+      links: [
+        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5309987" },
+        { label: "Slides", url: "https://drive.google.com/file/d/1-COnSenMUc9MjNF9f2gQQNf-ugQrxTnj/view?usp=drive_link" }
+      ],
+      abstract: "Using data on nearly 60,000 ideas from roughly 29,000 innovators within a firm, we study how network position affects innovation, measured by the quality of ideas proposed in a formal suggestion system. Network degree is associated with higher quality ideas. Bridging across structural holes is negatively related to idea quality in the short run, conditional on degree, but has positive effects in the medium run. Bridging also has positive and persisting effects on the quality of colleagues' ideas, suggesting a positive externality from 'brokers.' Network size is not related to idea quality, after controlling for degree and bridging. Compared to working from the office, remote work leads to lower average network degree and bridging. This weakening of networks may explain the reduced quality of innovation during remote work found in prior literature.",
+      mediaDate: "2025-06-23",
+      mediaItems: [
+        { outlet: "Network Law Review", url: "https://www.networklawreview.org/employee-networks/" },
+        { outlet: "Substack", url: "https://uycetinkaya.substack.com/p/unveiling-the-power-of-workplace" },
+        { outlet: "BFI research brief", url: "https://bfi.uchicago.edu/insights/innovator-networks-within-the-firm-and-the-quality-of-innovation/" },
+        { outlet: "Chicago Booth Review Podcast", url: "https://www.chicagobooth.edu/review/podcast/does-collaboration-really-produce-better-ideas" }
+      ]
+    },
+    {
+      title: "A Man's World? Consumption-Based Investment in the Mutual Fund Industry",
+      coauthors: "with Hans Peter Grüner and Alexandra Niessen-Ruenzi",
+      pubStatus: "Working Paper",
+      year: "2025",
+      journal: "",
+      journalDetail: "",
+      topics: ["Financial Economics"],
+      methods: ["Field Data Analysis"],
+      links: [
+        { label: "PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5175911" }
+      ],
+      abstract: "We investigate whether consumption preferences affect investment decisions of fund managers, using fund managers' gender as a source of variation in consumption. Male and female managers allocate investments differently across sectors, with consumption patterns closely linked to investment decisions. Portfolios with stronger consumption-related investments are less risky, and exhibit slightly weaker overall performance. Using a novel measure of portfolio masculinity, we find that more masculine portfolios underperform.  A counterfactual analysis highlights potentially large shifts in some sector investments if women managed half the volume, compared to the current <5% of US mutual fund assets, with significant implications for capital allocation.",
+      mediaDate: "2025-04-07",
+      mediaItems: [
+        { outlet: "The Telegraph [EN]", url: "https://www.telegraph.co.uk/business/2025/04/25/masculine-investors-do-worse-than-women/" },
+        { outlet: "Press Release [EN]", url: "https://www.uni-mannheim.de/media/Einrichtungen/Abteilung_Kommunikation/Dokumente/Pressemitteilungen/Pressemitteilungen_2025/04_01_Praeferenzen_Fondmanager_innen__003__en.pdf" },
+        { outlet: "Spiegel [DE]", url: "https://www.spiegel.de/wirtschaft/unternehmen/studie-maennliche-fondsmanager-erzielen-schlechtere-ergebnisse-als-weibliche-a-3d3e1268-4fca-42d0-9c44-bc18219c157a" },
+        { outlet: "MDR [DE]", url: "https://www.mdr.de/wissen/psychologie-sozialwissenschaften/unterschied-ob-fonds-von-maennern-oder-frauen-verwaltet-werden-100.html" },
+        { outlet: "WirtschaftsWoche [DE]", url: "https://www.wiwo.de/politik/konjunktur/nachgeforscht-die-persoenlichen-vorlieben-der-fondsmanager/100128337.html" },
+        { outlet: "Springer Professional [DE]", url: "https://www.springerprofessional.de/en/investmentfonds/vermoegensverwaltung/konsumvorlieben-beeinflussen-fondsmanager/50827686" },
+        { outlet: "Bank und Markt [DE]", url: "https://www.kreditwesen.de/bank-markt/marktberichte/blickpunkte/mehr-frauen-fondsbranche-id102063.html" },
+        { outlet: "Geo [DE]", url: "https://www.geo.de/wissen/forschung-und-technik/investmentfonds--warum-weibliche-portfolios-erfolgreicher-sind-35614042.html" },
+        { outlet: "gofeminin [DE]", url: "https://www.gofeminin.de/job-geld/fondmanager-studie-s5624942.html" },
+        { outlet: "t3n [DE]", url: "https://t3n.de/news/bessere-renditen-kluegere-entscheidungen-warum-frauen-die-erfolgreicheren-investoren-sind-laut-studie-1681043" }
+      ]
+    },
+    {
+      title: "#ManyDesignsCarbon: Do Behavioral Interventions Increase Support for Carbon Pricing?",
+      coauthors: "with Blanco et al. (crowd project)",
+      pubStatus: "Working Paper",
+      year: "2026",
+      journal: "R&R at Nature Human Behavior",
+      journalDetail: "",
+      topics: ["Environmental Economics", "Behavioral Economics"],
+      methods: ["Experiment", "Crowd Science"]
+    },
+    {
+      title: "Are There Manufacturer Differences in Hard-Drive Reliability?",
+      coauthors: "with Yeomyung Park",
+      pubStatus: "Published",
+      year: "2026",
+      journal: "IEEE Transactions on Cloud Computing",
+      journalDetail: "14(2), 1015-1024",
+      topics: [],
+      methods: ["Field Data Analysis"],
+      links: [
+        { label: "Published Article", url: "https://doi.org/10.1109/TCC.2026.3679404" },
+        { label: "Preprint PDF", url: "http://arxiv.org/abs/2606.29078" }
+      ],
+      showInResearch: false,
+      mediaDate: "2022-12-31",
+      mediaItems: [
+        { outlet: "Reddit / r/DataHoarder", url: "https://www.reddit.com/r/DataHoarder/comments/1vp9yh6/peerreviewed_study_of_443000_backblaze_hard/" },
+        { outlet: "Yahoo Tech", url: "https://tech.yahoo.com/computing/articles/peer-reviewed-study-443-000-155924278.html" },
+        { outlet: "Ifeng Tech [CN]", url: "https://tech.ifeng.com/c/8vd2Mg3wzzU" },
+        { outlet: "Sohu [CN]", url: "https://www.sohu.com/a/1063471707_362225" },
+        { outlet: "Tom's Hardware", url: "https://www.tomshardware.com/pc-components/hdds/peer-reviewed-study-of-443000-backblaze-drivers-ranks-hgst-most-reliable-and-toshiba-least" },
+        { outlet: "Hacker News", url: "https://news.ycombinator.com/item?id=49312803" },
+        { outlet: "NetEase / 163.com [CN]", url: "https://m.163.com/dy/article/L4EHML170511B8LM.html" },
+        { outlet: "KOCPC [TW]", url: "https://www.kocpc.com.tw/archives/665399" },
+        { outlet: "EveTech Daily Drop [ZA]", url: "https://evezone.evetech.co.za/daily-drop/hard-drive-reliability-study-sa-buyers" },
+        { outlet: "INF News [CN]", url: "https://inf.news/zh-hans/digital/fa574007234e0951eac41626fa0994e5.html" },
+        { outlet: "Blocks & Files", url: "https://www.blocksandfiles.com/disk/2026/08/07/hdd-failure-rates-by-manufacturer-revealed/5284845" },
+        { outlet: "Stacker News", url: "https://stacker.news/items/1548686" },
+        { outlet: "Xeno Spectrum [JP]", url: "https://xenospectrum.com/hdd-manufacturer-failure-rates/" },
+        { outlet: "Gadget Otaku [JP]", url: "https://gadget-otaku.com/en/2026/08/16/backblaze-hdd-reliability-hgst-toshiba-caution-en/" },
+        { outlet: "WEMEDIA [IT]", url: "https://www.wemedia.it/news/hgst_si_conferma_il_brand_di_hard_disk_piu_affidabile_secondo_uno_studio_su_443.000_unita-20894.html" },
+        { outlet: "BLOGSPAN [DE]", url: "https://www.blogspan.net/backblaze-studie-festplatten-ausfallraten/" }
+      ]
+    }
   ],
+  policyItems: [
+    {
+      title: "The Optimal Reset-Hour of a Once-Daily Petrol Price Increase Limit",
+      year: "2026",
+      context: "arXiv paper",
+      summary: "Germany announced that petrol stations would only be allowed to increase prices once per day in the future, whereas price decreases would remain unlimited. I ask when this single daily price increase should be allowed. Using detailed German intraday petrol price data, I infer the share of price-sensitive consumers at every hour of the day from the data, given a simple spatial competition model. Using the distribution of inferred shares of price-sensitive consumers over the day, I calculate the resulting equilibrium price path over the day for every possible \"reset-hour\" of the new policy. I find that a 11:00 reset minimizes the quantity-weighted daily price level.",
+      summaryExtra: "",
+      links: [
+        { label: "arXiv", url: "http://arxiv.org/abs/2603.18920" }
+      ]
+    },
+    {
+      title: "What can governments do when petrol prices rise?",
+      year: "2026",
+      context: "The Conversation",
+      summary: "A little explainer on the policy options for help with rising petrol prices. Explains the cause of price spikes as a recent negative supply shock, and argues that price controls are not a good idea. Suggests instead a measure based on lump sum transfers that retain consumer incentives to substitute away from petrol and save.",
+      summaryExtra: "",
+      links: [
+        { label: "Article", url: "https://theconversation.com/what-can-governments-do-when-petrol-prices-rocket-280094" }
+      ]
+    },
+    {
+      title: "Written evidence to the UK parliamentary committee on home-based working",
+      year: "2025",
+      context: "with Michael Gibbs and Friederike Mengel",
+      summary: "Response to a parliamentary committee on remote work, based on our three academic studies on this topic.",
+      summaryExtra: "",
+      links: [
+        { label: "Written evidence", url: "https://committees.parliament.uk/writtenevidence/138962/pdf/" },
+        { label: "Parliamentary inquiry", url: "https://committees.parliament.uk/work/8974/homebased-working" },
+        { label: "JPE Micro Article", url: "https://doi.org/10.1086/721803" },
+        { label: "Scientific Reports Article", url: "https://doi.org/10.1038/s41598-024-67122-6" }
+      ]
+    },
+    {
+      title: "Reducing Wasteful Year-End Spending",
+      year: "2022",
+      context: "Wirtschaftsdienst (in German)",
+      summary: "Suppose your organization gives employees an annual budget to fulfill their tasks. Then employees spend leftover funds on unneeded or low-quality items at year-end, because the funds are about to expire. This is known as \"use it or lose it.\" To address this problem, the paper recommends allowing a partial roll-over of unused funds to the next year. For example, 75% of left-over funds could be added to the employee budget next year, and the remaining 25% are returned to the organization. This provides incentives not to waste funds at year-end, and allows employees to make bigger useful investments in the future. The comment and response highlight that future budgets should not be cut in response to savings, otherwise such a \"ratchet effect\" kills incentives not to waste funds.",
+      summaryExtra: "",
+      links: [
+        { label: "Article", url: "https://doi.org/10.1007/s10273-022-3213-5" },
+        {
+          label: "Comment",
+          url: "https://www.wirtschaftsdienst.eu/inhalt/jahr/2022/heft/8/beitrag/verschwendung-der-jahresendausgaben-im-oeffentlichen-sektor-replik-und-erwiderung-7145.html#das-dezemberfieber-loesung-in-sicht"
+        },
+        {
+          label: "Response",
+          url: "https://www.wirtschaftsdienst.eu/inhalt/jahr/2022/heft/8/beitrag/verschwendung-der-jahresendausgaben-im-oeffentlichen-sektor-replik-und-erwiderung-7145.html#unkomplizierte-mitteluebertragung-vorantreiben"
+        }
+      ]
+    },
+    {
+      title: "Economics Peer-Review: Problems, Recent Developments, and Reform Proposals",
+      year: "2024",
+      context: "The American Economist",
+      summary: "Econ peer-review suffers from several issues such as referee overreach and excessive revisions. The article discusses the main issues, surveys the relevant literature, and recommends solutions for reform. First, enforce referee guidelines that reports must explicitly separate their suggestions into essential and optional, with 3 essential maximum. Second, let authors award the best referee report.  Third, adopt conflict of interest policies for referees and punish non-disclosure. Fourth, use double-blind refereeing. Fifth, make better use of prior reports from other journals. Sixth, pay referees for prompt reports. My article was cited in the AEA/EEA/ES/RES report on economics publishing.",
+      summaryExtra: "",
+      links: [
+        { label: "Article", url: "https://doi.org/10.1177/05694345241269484" },
+        {
+          label: "Publishing report",
+          url: "https://www.econometricsociety.org/uploads/documents/editorial/Improving%20Publication%20Process%20in%20Economics%20Report_2025.pdf"
+        }
+      ]
+    },
+    {
+      title: "Price caps on groceries are not the answer to the UK's inflation problem",
+      year: "2023",
+      context: "The Conversation",
+      summary: "A little explainer for non-economists why price controls are a bad idea to fight inflation. Some suggestions on alternatives. Fun fact: 70% of the UK public wants price controls.",
+      summaryExtra: "",
+      links: [
+        {
+          label: "Article",
+          url: "https://theconversation.com/price-caps-on-groceries-are-not-the-answer-to-the-uks-inflation-problem-206807"
+        }
+      ]
+    },
+    {
+      title: "Minimum Prices and Social Interactions: Evidence from the German Renewable Energy Program",
+      year: "2019",
+      context: "Energy Economics, with Justus Inhoffen and Philipp Zahn",
+      summary: "This research paper analyzes the early period of the German Renewable Energy Act's feed-in tariffs for residential photovoltaic panels. Findings: Panels were not usually installed where they would have generated the most energy. Social interaction or neighborhood effects increased the propensity to adopt such panels even in regions with low solar potential. We argue a more competitive price setting mechanism, such as a multi-unit action, can improve the efficiency of the subsidy by reducing costs but also by getting panels to sunnier regions where they produce more. Auction mechanisms have now indeed replaced the earlier feed-in tariffs in Germany.",
+      summaryExtra: "",
+      links: [
+        { label: "Article", url: "https://doi.org/10.1016/j.eneco.2018.11.034" },
+        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2796130" }
+      ]
+    }
+  ],
+  teaching: {
+    guideUrl: "https://drive.google.com/file/d/1EhJcLQZ_as3AHlbAmGoxqhfqDNccrlU7/view?usp=sharing",
+    guideNote: "All supervised students are urged to read and follow the guidelines on writing term papers and dissertations in economics. The document is updated from time to time.",
+    modules: [
+      { code: "Topics in Financial Economics", title: "University of Essex", institution: "Postgraduate module", level: "Postgraduate" },
+      {
+        code: "Experimental Methods in Economics",
+        title: "University of Essex",
+        institution: "Undergraduate module",
+        level: "Undergraduate"
+      },
+      {
+        code: "Financial Instruments and Capital Markets",
+        title: "University of Essex",
+        institution: "Undergraduate module",
+        level: "Undergraduate"
+      },
+      {
+        code: "The Capital Asset Pricing Model (Guest Lecture)",
+        title: "Beijing City University",
+        institution: "Undergraduate module",
+        level: "Undergraduate"
+      },
+      { code: "Microeconomics A (TA)", title: "University of Mannheim", institution: "Undergraduate module", level: "Undergraduate" },
+      { code: "Economic Policy A (TA)", title: "University of Mannheim", institution: "Undergraduate module", level: "Undergraduate" },
+      {
+        code: "Academic Writing and Presenting (TA)",
+        title: "University of Bayreuth",
+        institution: "Undergraduate module",
+        level: "Undergraduate"
+      }
+    ]
+  }
 };

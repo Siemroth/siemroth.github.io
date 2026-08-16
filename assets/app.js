@@ -166,6 +166,15 @@ function getPaperTitleLink(paper) {
     || links[0];
 }
 
+function getResearchStatuses(paper) {
+  const isWorkingPaper = String(paper.pubStatus || "").trim().toLowerCase() === "working paper";
+  if (isWorkingPaper) {
+    return ["working"];
+  }
+
+  return paper.isSelected ? ["selected", "published"] : ["published"];
+}
+
 function renderResearchPaperCard(paper) {
   const coauthors = (paper.coauthors || "").trim();
   const combinedTags = [...new Set([...(paper.topics || []), ...(paper.methods || [])])];
@@ -215,20 +224,23 @@ function renderPolicyCard(item) {
   `;
 }
 
-function renderMediaGroup(group, index) {
+function renderMediaGroup(paper, index) {
+  const items = paper.mediaItems || [];
+  const titleLink = getPaperTitleLink(paper);
+
   return `
     <details class="media-group" ${index < 2 ? "open" : ""}>
       <summary>
         <div class="media-summary">
           <div>
-            <h2>${escapeHtml(group.title)}</h2>
-            <p class="media-meta">${escapeHtml(group.items.length)} coverage items</p>
+            <h2>${escapeHtml(paper.title)}</h2>
+            <p class="media-meta">${escapeHtml(items.length)} coverage items</p>
           </div>
-          <a class="text-link" href="${escapeHtml(group.paperUrl)}" target="_blank" rel="noreferrer">Paper link</a>
+          ${titleLink ? `<a class="text-link" href="${escapeHtml(titleLink.url)}" target="_blank" rel="noreferrer">Paper link</a>` : ""}
         </div>
       </summary>
       <div class="media-link-list">
-        ${group.items.map((item) => `
+        ${items.map((item) => `
           <a class="media-link-item" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">
             <span>${escapeHtml(item.outlet)}</span>
             <span>Open source</span>
@@ -401,10 +413,12 @@ function renderHome() {
     return;
   }
 
-  const publicationCount = (siteData.selectedPublications?.length || 0) + (siteData.additionalPublications?.length || 0);
+  const researchPapers = (siteData.papers || []).filter((paper) => paper.showInResearch !== false);
+  const publicationCount = researchPapers.filter((paper) => getResearchStatuses(paper).includes("published")).length;
+  const workingPaperCount = researchPapers.filter((paper) => getResearchStatuses(paper).includes("working")).length;
   const stats = [
     { value: publicationCount, label: "Publications", href: "research.html?status=published" },
-    { value: siteData.workingPapers.length, label: "Working papers", href: "research.html?status=working" },
+    { value: workingPaperCount, label: "Working papers", href: "research.html?status=working" },
     { value: siteData.policyItems.length, label: "Policy contributions", href: "policy.html" },
   ];
 
@@ -429,20 +443,13 @@ function renderResearch() {
     return;
   }
 
-  const selectedPublications = (siteData.selectedPublications || []).map((paper) => ({
-    ...paper,
-    statuses: ["selected", "published"],
-  }));
-  const additionalPublications = (siteData.additionalPublications || []).map((paper) => ({
-    ...paper,
-    statuses: ["published"],
-    statusLabel: paper.pubStatus || "Published",
-  }));
-  const workingPapers = (siteData.workingPapers || []).map((paper) => ({
-    ...paper,
-    statuses: ["working"],
-  }));
-  const papers = [...selectedPublications, ...additionalPublications, ...workingPapers];
+  const papers = (siteData.papers || [])
+    .filter((paper) => paper.showInResearch !== false)
+    .map((paper) => ({
+      ...paper,
+      statuses: getResearchStatuses(paper),
+      statusLabel: paper.pubStatus || "Published",
+    }));
   const state = {
     statuses: new Set(["selected", "working"]),
     topics: new Set(),
@@ -642,12 +649,15 @@ function renderMedia() {
 
   function updateMedia() {
     const query = searchInput.value.trim().toLowerCase();
-    const visible = siteData.mediaGroups.filter((group) => {
+    const mediaPapers = (siteData.papers || [])
+      .filter((paper) => Array.isArray(paper.mediaItems) && paper.mediaItems.length)
+      .sort((a, b) => Date.parse(b.mediaDate) - Date.parse(a.mediaDate));
+    const visible = mediaPapers.filter((paper) => {
       if (!query) {
         return true;
       }
 
-      const haystack = [group.title, ...group.items.map((item) => item.outlet)].join(" ").toLowerCase();
+      const haystack = [paper.title, ...paper.mediaItems.map((item) => item.outlet)].join(" ").toLowerCase();
       return haystack.includes(query);
     });
 

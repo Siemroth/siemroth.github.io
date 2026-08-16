@@ -11,10 +11,10 @@ Static replacement for a Google Sites profile, prepared for GitHub Pages.
 - `policy.html`: policy-facing writing
 - `media.html`: media coverage grouped by paper
 - `teaching.html`: teaching and student guidance
-- `assets/data.js`: site content and publication tags
+- `assets/data.js`: site content, including one unified research-paper catalog with optional media coverage
 - `assets/app.js`: rendering and filtering logic
 - `assets/styles.css`: shared styling
 
 ## Maintenance
 
-Most content changes only require editing `assets/data.js`.
+Most content changes only require editing `assets/data.js`. Add a paper once in `papers`; use `isSelected` for selected-publication status and `mediaDate` (`YYYY-MM-DD`) plus `mediaItems` for optional coverage links. The Media page displays newer media dates first.
