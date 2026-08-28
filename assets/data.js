@@ -466,6 +466,7 @@ window.SITE_DATA = {
         { outlet: "KOCPC [TW]", url: "https://www.kocpc.com.tw/archives/665399" },
         { outlet: "Xeno Spectrum [JP]", url: "https://xenospectrum.com/hdd-manufacturer-failure-rates/" },
         { outlet: "EveTech Daily Drop", url: "https://evezone.evetech.co.za/daily-drop/hard-drive-reliability-study-sa-buyers" },
+        { outlet: "Backblaze (data source)", url: "https://www.backblaze.com/blog/backblaze-drive-stats-academic-ai-ml-research/" },
         { outlet: "cowcotland [FR]", url: "https://www.cowcotland.com/news/102067/hgst-serait-la-marque-la-plus-fiable-de-disque-dur-selon-une-etude-portant-sur-443-000-unites.html" },
         { outlet: "KitGuru", url: "https://www.kitguru.net/components/hard-drives/joao-silva/ieee-study-of-443000-hard-drives-ranks-hgst-as-most-reliable/" },
         { outlet: "cnBeta [CN]", url: "https://www.cnbeta.com.tw/articles/tech/1573496.htm" },
@@ -479,6 +480,7 @@ window.SITE_DATA = {
         { outlet: "Kursors [LV]", url: "https://kursors.lv/2026/08/19/verieniga-petijuma-noskaidroti-uzticamakie-cieto-disku-razotaji/" },
         { outlet: "WEMEDIA [IT]", url: "https://www.wemedia.it/news/hgst_si_conferma_il_brand_di_hard_disk_piu_affidabile_secondo_uno_studio_su_443.000_unita-20894.html" },
         { outlet: "Nordic Hardware [SE]", url: "https://nordichardware.se/hgst-mest-palitliga-i-studie-som-analyserade-443-000-harddiskar/" },
+        { outlet: "The Lab [GR]", url: "https://www.thelab.gr/news/hardware/%CE%BC%CE%B5%CE%BB%CE%AD%CF%84%CE%B7-%CF%83%CE%B5-443000-hdd-%CE%B5%CE%BD%CF%84%CE%BF%CF%80%CE%AF%CE%B6%CE%B5%CE%B9-%CE%BC%CE%B5%CE%B3%CE%AC%CE%BB%CE%B5%CF%82-%CE%B4%CE%B9%CE%B1%CF%86%CE%BF%CF%81%CE%AD%CF%82-%CE%B1%CE%BE%CE%B9%CE%BF%CF%80%CE%B9%CF%83%CF%84%CE%AF%CE%B1%CF%82-%CE%BC%CE%B5%CF%84%CE%B1%CE%BE%CF%8D-%CE%BA%CE%B1%CF%84%CE%B1%CF%83%CE%BA%CE%B5%CF%85%CE%B1%CF%83%CF%84%CF%8E%CE%BD-r12179/" },
         { outlet: "BLOGSPAN [DE]", url: "https://www.blogspan.net/backblaze-studie-festplatten-ausfallraten/" },
         { outlet: "Modding [FR]", url: "https://www.modding.fr/fiabilite-des-hdd-une-etude-compare-443-156-disques-sur-douze-ans/" },
         { outlet: "DNS Club [RU]", url: "https://club.dns-shop.ru/digest/181138-produktsiya-toshiba-priznana-naimenee-nadejnoi-po-itogam-analiza-r/" }
