@@ -428,7 +428,7 @@ window.SITE_DATA = {
       coauthors: "with Blanco et al. (crowd project)",
       pubStatus: "Working Paper",
       year: "2026",
-      journal: "R&R at Nature Human Behavior",
+      journal: "Conditionally accepted at Nature Human Behavior",
       journalDetail: "",
       topics: ["Environmental Economics", "Behavioral Economics"],
       methods: ["Experiment", "Crowd Science"]
@@ -457,6 +457,7 @@ window.SITE_DATA = {
         { outlet: "Tom's Hardware", url: "https://www.tomshardware.com/pc-components/hdds/peer-reviewed-study-of-443000-backblaze-drivers-ranks-hgst-most-reliable-and-toshiba-least" },
         { outlet: "Sina Tech [CN]", url: "https://tech.sina.cn/2026-08-16/detail-ininncxx8084256.d.html" },
         { outlet: "MyDrivers / Kuai Technology [CN]", url: "https://news.mydrivers.com/1/1144/1144102.htm" },
+        { outlet: "xda-developers", url: "https://www.xda-developers.com/re-evaluating-all-of-the-hdds-in-my-nas/" },
         { outlet: "TechSpot", url: "https://www.techspot.com/news/113499-new-study-finds-hgst-wd-hard-drives-fail.html" },
         { outlet: "NetEase / 163.com [CN]", url: "https://m.163.com/dy/article/L4EHML170511B8LM.html" },
         { outlet: "PC Games Hardware [DE]", url: "https://www.pcgameshardware.de/Festplatte-Hardware-255553/News/Backblaze-Studie-Ausfallraten-1551340/" },
