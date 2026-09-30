@@ -424,14 +424,15 @@ window.SITE_DATA = {
       ]
     },
     {
-      title: "#ManyDesignsCarbon: Do Behavioral Interventions Increase Support for Carbon Pricing?",
+      title: "Fifty-five Crowd-Sourced Designs Assessing Carbon Pricing Support in the U.S.",
       coauthors: "with Blanco et al. (crowd project)",
-      pubStatus: "Working Paper",
-      year: "2026",
-      journal: "Conditionally accepted at Nature Human Behavior",
+      pubStatus: "Published",
+      year: "forthcoming",
+      journal: "Nature Human Behavior",
       journalDetail: "",
       topics: ["Environmental Economics", "Behavioral Economics"],
-      methods: ["Experiment", "Crowd Science"]
+      methods: ["Experiment", "Crowd Science"],
+      isSelected: false
     },
     {
       title: "Are There Manufacturer Differences in Hard-Drive Reliability?",
