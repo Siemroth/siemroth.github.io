@@ -219,6 +219,7 @@ function renderPolicyCard(item) {
       </div>
       <p>${escapeHtml(item.summary)}</p>
       ${item.summaryExtra ? `<p>${escapeHtml(item.summaryExtra)}</p>` : ""}
+      ${item.basedOn ? `<p>Based on ${escapeHtml(item.basedOn.authors)} (${escapeHtml(item.basedOn.year)}). ${escapeHtml(item.basedOn.title)}. <em>${escapeHtml(item.basedOn.journal)}, ${escapeHtml(item.basedOn.volume)}</em>(${escapeHtml(item.basedOn.issue)}), ${escapeHtml(item.basedOn.pages)}.</p>` : ""}
       ${renderLinkPills(item.links, { compact: true })}
     </article>
   `;
@@ -234,7 +235,7 @@ function renderMediaGroup(paper, index) {
         <div class="media-summary">
           <div>
             <h2>${escapeHtml(paper.title)}</h2>
-            <p class="media-meta">${escapeHtml(items.length)} coverage items</p>
+            <p class="media-meta">${escapeHtml(items.length)} coverage item${items.length === 1 ? "" : "s"}</p>
           </div>
           ${titleLink ? `<a class="text-link" href="${escapeHtml(titleLink.url)}" target="_blank" rel="noreferrer">Paper link</a>` : ""}
         </div>

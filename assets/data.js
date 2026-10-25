@@ -291,6 +291,20 @@ window.SITE_DATA = {
       ]
     },
     {
+      title: "The Optimal Reset-Hour of a Once-Daily Petrol Price Increase Limit",
+      year: "2026",
+      links: [
+        { label: "Preprint PDF", url: "http://arxiv.org/abs/2603.18920" }
+      ],
+      showInResearch: false,
+      // Media ordering date: place this group directly below Employee Innovation.
+      mediaDate: "2023-12-31",
+      mediaItems: [
+        { outlet: "Welt [DE]", url: "https://www.welt.de/wirtschaft/article69bd4fb4e5e9d619745d1767/tankstellen-kampf-gegen-den-rakete-und-federeffekt-so-wirkt-die-neue-benzinpreis-regel.html" },
+        { outlet: "Fränkischer Tag [DE]", url: "https://www.fraenkischertag.de/lokales/bamberg/wirtschaft/monopol-experte-duso-ueber-tankrabatt-das-falsche-signal-art-540018" }
+      ]
+    },
+    {
       title: "A Field Experiment on Attracting Crowdfunders",
       coauthors: "with Lars Hornuf",
       year: "2023",
@@ -499,7 +513,7 @@ window.SITE_DATA = {
       title: "The Optimal Reset-Hour of a Once-Daily Petrol Price Increase Limit",
       year: "2026",
       context: "arXiv paper",
-      summary: "Germany announced that petrol stations would only be allowed to increase prices once per day in the future, whereas price decreases would remain unlimited. I ask when this single daily price increase should be allowed. Using detailed German intraday petrol price data, I infer the share of price-sensitive consumers at every hour of the day from the data, given a simple spatial competition model. Using the distribution of inferred shares of price-sensitive consumers over the day, I calculate the resulting equilibrium price path over the day for every possible \"reset-hour\" of the new policy. I find that a 11:00 reset minimizes the quantity-weighted daily price level.",
+      summary: "Germany announced that petrol stations would only be allowed to increase prices once per day in the future, whereas price decreases would remain unlimited. I ask when this single daily price increase should be allowed. Using detailed German intraday petrol price data, I infer the share of price-sensitive consumers at every hour of the day from the data, given a simple spatial competition model. Using the distribution of inferred shares of price-sensitive consumers over the day, I calculate the resulting equilibrium price path over the day for every possible \"reset-hour\" of the new policy. I find that an 11:00 reset minimizes the quantity-weighted daily price level.",
       summaryExtra: "",
       links: [
         { label: "arXiv", url: "http://arxiv.org/abs/2603.18920" }
@@ -509,7 +523,7 @@ window.SITE_DATA = {
       title: "What can governments do when petrol prices rise?",
       year: "2026",
       context: "The Conversation",
-      summary: "A little explainer on the policy options for help with rising petrol prices. Explains the cause of price spikes as a recent negative supply shock, and argues that price controls are not a good idea. Suggests instead a measure based on lump sum transfers that retain consumer incentives to substitute away from petrol and save.",
+      summary: "A short explainer on the policy options for help with rising petrol prices. Explains the cause of price spikes as a recent negative supply shock, and argues that price controls are not a good idea. Suggests instead a measure based on lump-sum transfers that retain consumer incentives to substitute away from petrol and save.",
       summaryExtra: "",
       links: [
         { label: "Article", url: "https://theconversation.com/what-can-governments-do-when-petrol-prices-rocket-280094" }
@@ -531,8 +545,8 @@ window.SITE_DATA = {
     {
       title: "Reducing Wasteful Year-End Spending",
       year: "2022",
-      context: "Wirtschaftsdienst (in German)",
-      summary: "Suppose your organization gives employees an annual budget to fulfill their tasks. Then employees spend leftover funds on unneeded or low-quality items at year-end, because the funds are about to expire. This is known as \"use it or lose it.\" To address this problem, the paper recommends allowing a partial roll-over of unused funds to the next year. For example, 75% of left-over funds could be added to the employee budget next year, and the remaining 25% are returned to the organization. This provides incentives not to waste funds at year-end, and allows employees to make bigger useful investments in the future. The comment and response highlight that future budgets should not be cut in response to savings, otherwise such a \"ratchet effect\" kills incentives not to waste funds.",
+      context: "Wirtschaftsdienst (in German), International Economic Review",
+      summary: "Suppose your organization gives employees an annual budget to fulfill their tasks. Then employees spend leftover funds on unneeded or low-quality items at year-end, because the funds are about to expire. This is known as \"use it or lose it.\" To address this problem, the paper recommends allowing a partial roll-over of unused funds to the next year. For example, 75% of leftover funds could be added to the employee budget next year, and the remaining 25% are returned to the organization. This provides incentives not to waste funds at year-end, and allows employees to make larger, worthwhile investments in the future. The comment and response highlight that future budgets should not be cut in response to savings, otherwise such a \"ratchet effect\" kills incentives not to waste funds.",
       summaryExtra: "",
       links: [
         { label: "Article", url: "https://doi.org/10.1007/s10273-022-3213-5" },
@@ -543,14 +557,15 @@ window.SITE_DATA = {
         {
           label: "Response",
           url: "https://www.wirtschaftsdienst.eu/inhalt/jahr/2022/heft/8/beitrag/verschwendung-der-jahresendausgaben-im-oeffentlichen-sektor-replik-und-erwiderung-7145.html#unkomplizierte-mitteluebertragung-vorantreiben"
-        }
+        },
+        { label: "underlying research article", url: "https://doi.org/10.1111/iere.12684" }
       ]
     },
     {
       title: "Economics Peer-Review: Problems, Recent Developments, and Reform Proposals",
       year: "2024",
       context: "The American Economist",
-      summary: "Econ peer-review suffers from several issues such as referee overreach and excessive revisions. The article discusses the main issues, surveys the relevant literature, and recommends solutions for reform. First, enforce referee guidelines that reports must explicitly separate their suggestions into essential and optional, with 3 essential maximum. Second, let authors award the best referee report.  Third, adopt conflict of interest policies for referees and punish non-disclosure. Fourth, use double-blind refereeing. Fifth, make better use of prior reports from other journals. Sixth, pay referees for prompt reports. My article was cited in the AEA/EEA/ES/RES report on economics publishing.",
+      summary: "Econ peer-review suffers from several issues such as referee overreach and excessive revisions. The article discusses the main issues, surveys the relevant literature, and recommends solutions for reform. First, enforce referee guidelines that reports must explicitly separate their suggestions into essential and optional, with a maximum of three essential suggestions. Second, let authors nominate the best referee report for an award.  Third, adopt conflict of interest policies for referees and punish non-disclosure. Fourth, use double-blind refereeing. Fifth, make better use of prior reports from other journals. Sixth, pay referees for prompt reports. My article was cited in the AEA/EEA/ES/RES report on economics publishing.",
       summaryExtra: "",
       links: [
         { label: "Article", url: "https://doi.org/10.1177/05694345241269484" },
@@ -561,10 +576,21 @@ window.SITE_DATA = {
       ]
     },
     {
+      title: "Improving Decisions with Market Information: An Experiment on Corporate Prediction Markets",
+      year: "2021",
+      context: "Experimental Economics, with Ahrash Dianat",
+      summary: "How should organizations design internal prediction markets to help managers make better decisions? Betting on a missed project deadline can backfire: if the warning prompts a manager to intervene, the deadline is met and those who revealed the problem lose their bets. We test an alternative that rewards predictions of the manager's intervention. In our lab experiment, this theoretically better design only works well with clear guidance on how trading can convey information and inform decisions. Such guidance improves decision-making in both designs. The practical lesson is to combine appropriate market incentives with clear communication to employees about how the market is intended to work.",
+      summaryExtra: "",
+      links: [
+        { label: "Article", url: "https://doi.org/10.1007/s10683-020-09654-y" },
+        { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3345569" }
+      ]
+    },
+    {
       title: "Price caps on groceries are not the answer to the UK's inflation problem",
       year: "2023",
       context: "The Conversation",
-      summary: "A little explainer for non-economists why price controls are a bad idea to fight inflation. Some suggestions on alternatives. Fun fact: 70% of the UK public wants price controls.",
+      summary: "A short explainer for non-economists on why price controls are a bad idea to fight inflation. Some suggestions on alternatives. Fun fact: 70% of the UK public wants price controls.",
       summaryExtra: "",
       links: [
         {
@@ -577,11 +603,22 @@ window.SITE_DATA = {
       title: "Minimum Prices and Social Interactions: Evidence from the German Renewable Energy Program",
       year: "2019",
       context: "Energy Economics, with Justus Inhoffen and Philipp Zahn",
-      summary: "This research paper analyzes the early period of the German Renewable Energy Act's feed-in tariffs for residential photovoltaic panels. Findings: Panels were not usually installed where they would have generated the most energy. Social interaction or neighborhood effects increased the propensity to adopt such panels even in regions with low solar potential. We argue a more competitive price setting mechanism, such as a multi-unit action, can improve the efficiency of the subsidy by reducing costs but also by getting panels to sunnier regions where they produce more. Auction mechanisms have now indeed replaced the earlier feed-in tariffs in Germany.",
+      summary: "This research paper analyzes the early period of the German Renewable Energy Act's feed-in tariffs for residential photovoltaic panels. Findings: Panels were not usually installed where they would have generated the most energy. Social interaction or neighborhood effects increased the propensity to adopt such panels even in regions with low solar potential. We argue a more competitive price setting mechanism, such as a multi-unit auction, can improve the efficiency of the subsidy by reducing costs but also by getting panels to sunnier regions where they produce more. Auction mechanisms have now indeed replaced the earlier feed-in tariffs in Germany.",
       summaryExtra: "",
       links: [
         { label: "Article", url: "https://doi.org/10.1016/j.eneco.2018.11.034" },
         { label: "Preprint PDF", url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2796130" }
+      ]
+    },
+    {
+      title: "A Field Experiment in Motivating Employee Ideas",
+      year: "2017",
+      context: "Review of Economics and Statistics, with Michael Gibbs and Susanne Neckermann",
+      summary: "Tech companies rely on continuous innovation to compete, but how to encourage employees to suggest useful improvements? We evaluate a reward policy across 19 teams at HCL Technologies, involving more than 11,000 employees. The policy awarded points redeemable for consumer goods for ideas approved by clients. Rewards increased idea quality and encouraged more employees to participate, without increasing the total number of ideas submitted. Broader participation persisted after rewards ended, and we found no evidence of crowding out intrinsic motivation. The findings show how rewards tied to idea quality can improve employee suggestion schemes. After seeing our analysis, the company adopted a similar policy across the firm.",
+      summaryExtra: "",
+      links: [
+        { label: "Article", url: "https://doi.org/10.1162/REST_a_00631" },
+        { label: "Preprint PDF", url: "https://ssrn.com/abstract=2420965" }
       ]
     }
   ],

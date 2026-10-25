@@ -233,6 +233,16 @@ button {
   grid-template-columns: minmax(0, 1.58fr) minmax(260px, 0.87fr);
 }
 
+body[data-page="policy"] .intro-grid,
+body[data-page="research"] .intro-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+body[data-page="policy"] .page-intro .lead,
+body[data-page="research"] .page-intro .lead {
+  max-width: none;
+}
+
 .hero-copy,
 .hero-panel,
 .intro-sidecard,
