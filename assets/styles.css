@@ -645,10 +645,19 @@ h3 {
   padding: 1rem 1rem 0.95rem;
 }
 
-.filter-section + .filter-section {
+.filter-section + .filter-section,
+.research-filter-options > .filter-section:first-child {
   margin-top: 0.8rem;
   padding-top: 0.85rem;
   border-top: 1px solid var(--line);
+}
+
+.research-filter-toggle {
+  display: none;
+}
+
+.research-filter-options {
+  display: contents;
 }
 
 .filter-label,
@@ -1050,7 +1059,6 @@ h3 {
   color: var(--muted);
   font-size: 0.88rem;
   line-height: 1.55;
-  cursor: pointer;
 }
 
 .paper-abstract[hidden] {
@@ -1233,6 +1241,38 @@ h3 {
 
   .filter-panel {
     position: static;
+  }
+
+  .research-filter-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 0.8rem;
+    padding: 0.7rem 0.85rem;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: rgba(31, 79, 121, 0.08);
+    color: var(--accent-strong);
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+  }
+
+  .research-filter-toggle::after {
+    content: "+";
+  }
+
+  .research-filter-toggle[aria-expanded="true"]::after {
+    content: "\2212";
+  }
+
+  .research-filter-options {
+    display: block;
+  }
+
+  .research-filter-toggle[aria-expanded="false"] + .research-filter-options {
+    display: none;
   }
 
   .stat-strip,

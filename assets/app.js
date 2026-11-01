@@ -439,10 +439,16 @@ function renderResearch() {
   const methodFilters = document.querySelector("#method-filters");
   const statusFilters = document.querySelector("#status-filters");
   const clearButton = document.querySelector("#clear-research-filters");
+  const filterToggle = document.querySelector(".research-filter-toggle");
 
   if (!researchShell || !resultsContainer || !resultCount || !topicFilters || !methodFilters || !statusFilters || !clearButton) {
     return;
   }
+
+  filterToggle?.addEventListener("click", () => {
+    const isExpanded = filterToggle.getAttribute("aria-expanded") === "true";
+    filterToggle.setAttribute("aria-expanded", String(!isExpanded));
+  });
 
   const papers = (siteData.papers || [])
     .filter((paper) => paper.showInResearch !== false)
@@ -557,7 +563,7 @@ function renderResearch() {
     } else if (activeStatuses.length === 3) {
       statusScope = "publications + working papers";
     } else if (activeStatuses.length === 0) {
-      statusScope = "all publications";
+      statusScope = "publications + working papers";
     }
 
     resultCount.textContent = `${orderedVisible.length} article${orderedVisible.length === 1 ? "" : "s"} shown (${statusScope})`;
@@ -602,12 +608,6 @@ function renderResearch() {
       const targetId = abstractToggle.dataset.abstractTarget;
       const isExpanded = abstractToggle.getAttribute("aria-expanded") === "true";
       setAbstractExpanded(targetId, !isExpanded);
-      return;
-    }
-
-    const abstractPanel = event.target.closest(".paper-abstract");
-    if (abstractPanel) {
-      setAbstractExpanded(abstractPanel.dataset.abstractId, false);
       return;
     }
 
